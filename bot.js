@@ -27,6 +27,7 @@ async function refreshToken(refresh, clientID, clientSecret) {
             return res.json()
         })
         .then((res) => {
+            console.log(res)
             return res
         })
 
@@ -53,6 +54,11 @@ const client = new tmi.client(opts);
 // Register our event handlers (defined below)
 client.on('message', onMessageHandler);
 client.on('connected', onConnectedHandler);
+// client.on("disconnected", async (reason) => {
+//     let access = await refreshToken(process.env.TWITCH_REFRESH, process.env.TWITCH_CLIENT, process.env.TWITCH_SECRET)
+//     opts.identity.password = 'oauth:' + access
+//     client.connect()
+// });
 
 // Connect to Twitch:
 client.connect();
@@ -91,16 +97,23 @@ function onMessageHandler(target, context, msg, self) {
 }
 
 function lookup(body) {
+    let final = 'No item found.'
     const result = fuse.search(body, { limit: 1 })
     if (result.length) {
         const item = result[0].item
         if (item.damage) {
-            return item.display_name + ' | Damage: ' + item.damage + ' | Stamina: ' + item.stamina + ' | Accuracy: ' + item.accuracy + ' | Cooldown: ' + item.cooldown + ' | ' + item.description
+            final = item.display_name + ' | Damage: ' + item.damage + ' | Stamina: ' + item.stamina + ' | Accuracy: ' + item.accuracy + ' | Cooldown: ' + item.cooldown + ' | ' + item.description
+        } else {
+            final = item.display_name + ' | ' + item.description
         }
-        return item.display_name + ' | ' + item.description
-    } else {
-        return 'No item found.'
+        if (item.recipe) {
+            final = final + ' | Recipe: ' + item.recipe
+        }
+        if (item.cost) {
+            final = final + ' | Cost: ' + item.cost
+        }
     }
+    return final
 }
 
 async function joinChannel(username) {
