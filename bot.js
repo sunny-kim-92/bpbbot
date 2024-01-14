@@ -27,7 +27,6 @@ async function refreshToken(refresh, clientID, clientSecret) {
             return res.json()
         })
         .then((res) => {
-            console.log(res)
             return res
         })
 
@@ -75,14 +74,11 @@ function onMessageHandler(target, context, msg, self) {
     const bodyArr = msg.trim().split(' ')
     bodyArr.shift()
     const body = bodyArr.join(' ')
-    console.log(commandName)
 
     // If the command is known, let's execute it
     if (commandName == '!bpb') {
         let definition = lookup(body)
         client.say(target, definition);
-        console.log(target)
-        console.log(definition)
     } else if (commandName == '!join') {
         if (target == '#backpackhelpbot') {
             joinChannel(context.username)
