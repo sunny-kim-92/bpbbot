@@ -114,7 +114,7 @@ function lookup(body) {
     const result = fuse.search(body, { limit: 1 })
     if (result.length) {
         const item = result[0].item
-        final.item = item
+        final.item = item.display_name
         if (item.damage) {
             final.result = item.display_name + ' | Damage: ' + item.damage + ' | Stamina: ' + item.stamina + ' | Accuracy: ' + item.accuracy + ' | Cooldown: ' + item.cooldown + ' | ' + item.description
         } else {
