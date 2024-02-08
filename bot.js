@@ -90,7 +90,7 @@ function onMessageHandler(target, context, msg, self) {
     // If the command is known, let's execute it
     if (commandName == '!bpb') {
         let searchObject = lookup(body)
-        client.say(target, searchObject.definition);
+        client.say(target, searchObject.result);
         console.log('search: ' + body + ', result: ' + searchObject.item + ', user: ' + context.username + ', channel: ' + target)
     } else if (commandName == '!join') {
         if (target == '#backpackhelpbot') {
@@ -106,26 +106,28 @@ function onMessageHandler(target, context, msg, self) {
 }
 
 function lookup(body) {
-    let final = 'No item found.'
+    let final = {
+        item: 'None',
+        result: 'No item found.'
+    }
+
     const result = fuse.search(body, { limit: 1 })
     if (result.length) {
         const item = result[0].item
+        final.item = item
         if (item.damage) {
-            final = item.display_name + ' | Damage: ' + item.damage + ' | Stamina: ' + item.stamina + ' | Accuracy: ' + item.accuracy + ' | Cooldown: ' + item.cooldown + ' | ' + item.description
+            final.result = item.display_name + ' | Damage: ' + item.damage + ' | Stamina: ' + item.stamina + ' | Accuracy: ' + item.accuracy + ' | Cooldown: ' + item.cooldown + ' | ' + item.description
         } else {
-            final = item.display_name + ' | ' + item.description
+            final.result = item.display_name + ' | ' + item.description
         }
         if (item.recipe) {
-            final = final + ' | Recipe: ' + item.recipe
+            final.result = final + ' | Recipe: ' + item.recipe
         }
         if (item.cost) {
-            final = final + ' | Cost: ' + item.cost
+            final.result = final + ' | Cost: ' + item.cost
         }
     }
-    return {
-        item: item.display_name,
-        definition: final
-    }
+    return final
 }
 
 async function joinChannel(username) {
