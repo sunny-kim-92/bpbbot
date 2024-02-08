@@ -91,13 +91,16 @@ function onMessageHandler(target, context, msg, self) {
     if (commandName == '!bpb') {
         let definition = lookup(body)
         client.say(target, definition);
+        console.log(context.user + ' searched ' + body + ' in channel ' + target)
     } else if (commandName == '!join') {
         if (target == '#backpackhelpbot') {
             joinChannel(context.username)
+            console.log(context.user + ' joined.')
         }
     } else if (commandName == '!leave') {
         if (target == '#backpackhelpbot') {
             leaveChannel(context.username)
+            console.log(context.user + ' left.')
         }
     }
 }
