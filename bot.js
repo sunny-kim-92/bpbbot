@@ -38,9 +38,13 @@ let access = await refreshToken(process.env.TWITCH_REFRESH, process.env.TWITCH_C
 
 // Define configuration options
 const opts = {
+    connection: {
+        reconnect: true
+    },
     identity: {
         username: 'backpackhelpbot',
         password: 'oauth:' + access
+        // password: 'oauth:wzltm42y54ihcu3m90to5qdr6pqbuy'
     },
     channels: [
         'backpackhelpbot',
@@ -54,11 +58,13 @@ const client = new tmi.client(opts);
 // Register our event handlers (defined below)
 client.on('message', onMessageHandler);
 client.on('connected', onConnectedHandler);
-// client.on("disconnected", async (reason) => {
-//     let access = await refreshToken(process.env.TWITCH_REFRESH, process.env.TWITCH_CLIENT, process.env.TWITCH_SECRET)
-//     opts.identity.password = 'oauth:' + access
-//     client.connect()
-// });
+client.on("disconnected", (reason) => {
+    console.error(`Disconnected for ${reason}`);
+        refreshToken(process.env.TWITCH_REFRESH, process.env.TWITCH_CLIENT, process.env.TWITCH_SECRET)
+            .catch(error => {
+                console.error(error);
+            });
+});
 
 // Connect to Twitch:
 client.connect();

@@ -388,7 +388,7 @@ export const items = [
         rarity: 4,
         type: 2,
         subtype: 2,
-        cost: 14,
+        cost: 13,
         class: [1, 2],
         id: 18
     },
@@ -535,7 +535,7 @@ export const items = [
         rarity: 6,
         type: 4,
         subtype: 3,
-        cost: 11,
+        cost: 9,
         class: [1, 2],
         id: 31,
     },
@@ -572,7 +572,7 @@ export const items = [
         rarity: 6,
         type: 8,
         subtype: 5,
-        cost: 12,
+        cost: 11,
         class: [1, 2],
         id: 34
     },
@@ -607,17 +607,17 @@ export const items = [
         id: 36
     },
     {
-        damage: '10-16 (7.2/s)',
+        damage: '10-16 (8.1/s)',
         stamina: '1 (0.6/s)',
         accuracy: '60%',
-        cooldown: '1.8s',
+        cooldown: '1.6s',
         description: 'On hit: Use 3 Luck to gain 3 damage. On miss: Gain 3 Luck',
         name: 'fancy_fencing_rapier',
         display_name: 'Fancy Fencing Rapier',
         rarity: 5,
         type: 8,
         subtype: null,
-        cost: 13,
+        cost: 12,
         class: [1, 2],
         id: 37
     },
@@ -662,7 +662,7 @@ export const items = [
         rarity: 5,
         type: 8,
         subtype: null,
-        cost: 15,
+        cost: 14,
         class: [1, 2],
         id: 40
     },
@@ -742,10 +742,10 @@ export const items = [
         id: 45
     },
     {
-        damage: '2-4 (2.5/s)',
-        stamina: '0.7 (0.6/s)',
+        damage: '2-4 (2.3/s)',
+        stamina: '0.7 (0.5/s)',
         accuracy: '90%',
-        cooldown: '1.2s',
+        cooldown: '1.3s',
         description: 'Star Melee Weapons deal -2 damage. Deals +4 damage for each Star Melle Weapon',
         name: 'villian_sword',
         display_name: 'Villain Sword',
@@ -871,7 +871,7 @@ export const items = [
         id: 56
     },
     {
-        description: 'Health drops below 50%: Consume this and heal 12 and cleanse 4 Poison.',
+        description: 'Health drops below 50%: Consume this and heal 11 and cleanse 4 Poison.',
         name: 'health_potion',
         display_name: 'Health Potion',
         rarity: 2,
@@ -1153,7 +1153,7 @@ export const items = [
         recipe: 'Tusk + Wooden Buckler'
     },
     {
-        description: 'Weapon socket: 12% chance to deal +6 damage and gain 1 Heat. Armor & other sockets: Start of battle: Gain 12 Block, resist 3 Cold. Backpack: After 5s: Gain 2 Heat, cleanse 2 debuffs.',
+        description: 'Weapon socket: 12% chance to deal +6 damage and gain 1 Heat. Armor & other sockets: Start of battle: Gain 15 Block, resist 3 Cold. Backpack: After 5s: Gain 2 Heat, cleanse 3 debuffs.',
         display_name: 'Burning Coal',
         recipe: 'Coal + fire source'
     },
@@ -1172,7 +1172,7 @@ export const items = [
         recipe: 'Whetstone + Whetstone + Wooden Sword'
     },
     {
-        damage: '2-5 (1.2/s)',
+        damage: '3-6 (1.5/s)',
         stamina: '0 (0/s)',
         accuracy: '95%',
         cooldown: '3s',
@@ -1194,7 +1194,7 @@ export const items = [
         stamina: '1 (0.7/s)',
         accuracy: '90%',
         cooldown: '1.4s',
-        description: 'Start of battle: Gain 2 Heat. On hit: 25% chance to gain 1 damage. If you have at least 15 Heat, gain 2 damage instead.',
+        description: 'Start of battle: Gain 2 Heat. On hit: 30% chance to gain 1 damage. If you have at least 15 Heat, gain 2 damage instead.',
         display_name: 'Burning Torch',
         recipe: 'Torch + fire source'
     },
@@ -1219,7 +1219,7 @@ export const items = [
     },
     {
         display_name: 'Platinum Customer Card',
-        description: 'Reflect 2 debuffs per Star Legendary, Godly, and Unique item. Increases chance to find Unique items by 6%. You can obtain +1 Unique item.',
+        description: 'Reflect 2 debuffs per Star Legendary, Godly, and Unique item. Increases chance to find Unique items by 10%. You can obtain +1 Unique item.',
         recipe: 'Customer Card + Customer Card'
     },
     {
@@ -1229,7 +1229,7 @@ export const items = [
         cooldown: '2.5s',
         display_name: 'Spectral Dagger',
         description: 'On attack: Use 1 Mana to attack health directly and deal +7 damage. On stun: Triggers extra attack.',
-        recipe: 'Dagger + Mana Orb'
+        recipe: 'Dagger + Mana Potion'
     },
     {
         damage: '5-7 (3.3/s)',
@@ -1265,25 +1265,25 @@ export const items = [
         recipe: 'Hero Sword + Whetstone + Whetstone'
     },
     {
-        damage: '4-5 (2/s)',
+        damage: '4-5 (2.1/s)',
         stamina: '1 (0.5/s)',
         accuracy: '100%',
-        cooldown: '2.2s',
+        cooldown: '2.1s',
         display_name: 'Falcon Blade',
         description: 'Attacks twice. Start of battle: Star items trigger 30% faster',
         recipe: 'Gloves of Haste + Gloves of Haste + Hero Sword'
     },
     {
-        damage: '6-7 (4.3/s)',
+        damage: '8-9 (5.7/s)',
         stamina: '1.3 (0.9/s)',
         accuracy: '90%',
         cooldown: '1.5s',
         display_name: 'Eggscalibur',
-        description: 'Deals +1 damage for each Star food. On attack: Use 13 Mana: Trigger all Star food.',
+        description: 'Deals +1 damage for each Star food. On attack: Use 12 Mana: Trigger all Star food.',
         recipe: 'Heroic Potion + Pan'
     },
     {
-        damage: '6-8 (3.5/s)',
+        damage: '9-11 (5/s)',
         stamina: '0.7 (0.3/s)',
         accuracy: '90%',
         cooldown: '2s',
@@ -1315,12 +1315,12 @@ export const items = [
         recipe: 'Blood Gem + Dagger'
     },
     {
-        damage: '4-6 (3.6/s)',
+        damage: '5-7 (4.3/s)',
         stamina: '0.5 (0.4/s)',
         accuracy: '200%',
         cooldown: '1.4s',
         display_name: 'Manathirst',
-        description: 'On hit: Gain 1 Mana. 20 Mana gained: Steal 12 life, increased by 1 for each Vampirism.',
+        description: 'On hit: Gain 1 Mana. 20 Mana gained: Steal 10 life, increased by 1 for each Vampirism.',
         recipe: 'Hungry Blade + Mana Orb'
     },
     {
@@ -1335,7 +1335,7 @@ export const items = [
     },
     {
         display_name: 'Strong Pestilence Flask',
-        description: 'Opponent regenerates health: Consume this and inflice 3 Poison and 1 Poison to yourself. After 5s, inflict another 3 Poison.',
+        description: 'Opponent regenerates health: Consume this and inflice 3 Poison and 1 Poison to yourself. After 6s, inflict another 3 Poison.',
         recipe: 'Fly Argaric + Pestilence Flask'
     },
     {
@@ -1344,7 +1344,7 @@ export const items = [
         recipe: 'Blood Gem + Goobert'
     },
     {
-        damage: '8-11 (3.2/s)',
+        damage: '9-12 (3.5/s)',
         stamina: '1.5 (0.5/s)',
         accuracy: '85%',
         cooldown: '3s',
@@ -1372,7 +1372,7 @@ export const items = [
         accuracy: '85%',
         cooldown: '3s',
         display_name: "Belladonna's Whisper",
-        description: "Star Weapon deals 7 damage: Next attack with Belladonna's Whisper inflicts +1 Poison. Deals 0.5 damage per Poison of your opponent.",
+        description: "Star Weapon deals 9 damage: Next attack with Belladonna's Whisper inflicts +1 Poison. Deals 0.5 damage per Poison of your opponent.",
         recipe: "Bow and Arrow + Pestilence Flask"
     },
     {
@@ -1391,23 +1391,25 @@ export const items = [
     },
     {
         display_name: 'Staff of Unhealing',
-        description: 'Every 2s: Heal for 10. Use 6 Mana: Heal +4 more and for 2s, healing also deals damage.',
+        stamina: '1.5 (0.8/s)',
+        cooldown: '2s',
+        description: 'Every 2s: Heal for 10. Use 6 Mana: For 2s, healing also deals damage.',
         recipe: 'Demonic Flask + Magic Staff'
     },
     {
-        damage: '7-12 (6.8/s)',
-        stamina: '1 (0.7/s)',
+        damage: '7-12 (6.3/s)',
+        stamina: '1.2 (0.8/s)',
         accuracy: '95%',
-        cooldown: '1.4s',
+        cooldown: '1.5s',
         display_name: 'Darksaber',
         description: 'Deal +0.5 damage for each debuff of your opponent. On attack: Use 1 Mana to inflict 1 Blind.',
         recipe: 'Corrupted Crystal + Lightsaber'
     },
     {
-        damage: '7-10 (5.3/s)',
-        stamina: '1 (0.6/s)',
+        damage: '9-12 (7/s)',
+        stamina: '1 (0.7/s)',
         accuracy: '100%',
-        cooldown: '1.6s',
+        cooldown: '1.5s',
         display_name: 'Crossblades',
         description: 'Start of battle: The Star Weapon gains 10 damage. The diamond item triggers 60% faster.',
         recipe: 'Falcon Blade + Hero Longsword'
@@ -1428,11 +1430,11 @@ export const items = [
     },
     {
         display_name: 'Strong Demonic Flask',
-        description: 'Opponent drops below 50%: Consume this and steal 0.4 life for each debuff of your opponent.',
+        description: "Opponent drops below 50%: Consume this and steal 0.4 life for each debuff of your opponent, and for 3s, reduce opponent's healing by 30%",
         recipe: 'Corrupted Crystal + Demonic Flask'
     },
     {
-        damage: '9-14 (5.8/s)',
+        damage: '15-20 (8.8/s)',
         stamina: '0 (0/s)',
         accuracy: '90%',
         cooldown: '2s',
@@ -1447,7 +1449,83 @@ export const items = [
     },
     {
         display_name: 'Cap of Discomfort',
-        description: "Start of battle: Reduce damage taken by 25% for 5s. Opponent gains buff: 15% chance to nullify it. Your opponent's healing is reduced by 30%",
+        description: "Start of battle: Reduce damage taken by 25% for 5s. Opponent gains buff: 15% chance to nullify it. Your opponent's healing is reduced by 30%.",
         recipe: 'Corrupted Crystal + Cap of Resilience'
+    },
+    {
+        display_name: 'Tim',
+        description: 'Weapon socket: On hit: 50% chance to steal a random buff from your opponent. Armor & other sockets: 30% chance to resist a debuff or crit. Backpack: Opponent drops below 30% health: Heal for 50 and gain 5 empower.',
+        cost: 11
+    },
+    {
+        display_name: 'Jerry',
+        description: 'Start of battle: Gain 40 maximum health. Every 3s: Use 1 Luck, 1 Heat, and 1 Mana: Gain 1 Empower, 3 Regeneration, and 20 maximum health.',
+        cost: 8
+    },
+    {
+        display_name: 'Mr. Struggles',
+        description: 'Every 3s: Inflict Fatigue damage. On debuffed: 35% chance to inflict the same debuff. Health drops below 50%: Star items trigger 100% faster for 3s.',
+        cost: 10
+    },
+    {
+        display_name: 'Piercing Arrow',
+        description: 'Star Weapons deal +30% critical damage. They remove 5 Block on crit.',
+        cost: 10
+    },
+    {
+        display_name: 'Yggdrasil Leaf',
+        description: 'Start of battle: Gain 1 Mana and 1 Regeneration for each Star Nature item. 5 Mana used: Heal for 5 and cleanse 2 debuffs.',
+        cost: 10
+    },
+    {
+        display_name: 'Poison Ivy',
+        description: 'You have a 5% chance to resist debuffs for each Star Nature item. Spike gained: Inflict 2 Poison. Opponent reaches 19 Poison: They take +20% damage.',
+        cost: 10
+    },
+    {
+        damage: '3-7 (2.5/s)',
+        stamina: '0 (0/s)',
+        accuracy: '95%',
+        cooldown: '2.2s',
+        display_name: 'Cursed Dagger',
+        description: 'On stun: Triggers extra attack. On hit: Inflict 2 random debuffs. This and Star items have +1% accurace and +1% crit chance per debuff of your opponent.',
+        cost: 10
+    },
+    {
+        display_name: 'Nocturnal Lock Lifter',
+        description: 'Start of battle: Gain 2 Vampirism. Star Weapons steal 20% life. Your healing is amplified by 25%. Your Poison steals life through Vampirism.',
+        cost: 10
+    },
+    {
+        display_name: 'Ranger Bag',
+        description: 'Add 6 backpack slots. Items inside gain 10% critical hit chance + 3% for each Luck.'
+    },
+    {
+        display_name: 'Storage Coffin',
+        description: 'Add 8 backpack slots. Item inside activates: 25% chance to inflict 1 Poison.'
+    },
+    {
+        display_name: 'Moon Shield',
+        description: 'Star items give +30% Black. For ever 12 Block they gain, gain 1 Mana. On attacked: 35% chance to prevent 12 damage and remove 0.7 stamina from your opponent.',
+        recipe: 'Mana Orb + Shield of Valor'
+    },
+    {
+        display_name: 'Corrupted Armor',
+        description: '10% chance for each Star Dark item to protect debuffs on your opponent from being cleansed. Start of battle: Gain 70 Block. Ever 3s: Cleanse 2 debuffs and inflict them on your opponent.',
+        recipe: 'Corrupted Crystal + Holy Armor'
+    },
+    {
+        damage: '15-20 (8.8/s)',
+        stamina: '2 (1/s)',
+        accuracy: '85%',
+        cooldown: '2s',
+        display_name: 'Dancing Dragon',
+        description: 'Deals +1 damager per Heat. You have a 2% chance to resist debuffs for each Luck. Start of battle: Gain 1 Heat and 1 Luck for each Star Magic item.',
+        cost: 10
+    },
+    {
+        display_name: 'Wolpertinger',
+        description: 'Increase stamina regeneration by 1% for each buff you have. Every 5s: Gain 3 of the buff you have the least of. Triggers 15% faster for each Star Pet.',
+        cost: 12
     },
 ]
