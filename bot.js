@@ -121,10 +121,10 @@ function lookup(body) {
             final.result = item.display_name + ' | ' + item.description
         }
         if (item.recipe) {
-            final.result = final + ' | Recipe: ' + item.recipe
+            final.result = final.result + ' | Recipe: ' + item.recipe
         }
         if (item.cost) {
-            final.result = final + ' | Cost: ' + item.cost
+            final.result = final.result + ' | Cost: ' + item.cost
         }
     }
     return final
