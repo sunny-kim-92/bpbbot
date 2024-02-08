@@ -60,10 +60,10 @@ client.on('message', onMessageHandler);
 client.on('connected', onConnectedHandler);
 client.on("disconnected", (reason) => {
     console.error(`Disconnected for ${reason}`);
-        refreshToken(process.env.TWITCH_REFRESH, process.env.TWITCH_CLIENT, process.env.TWITCH_SECRET)
-            .catch(error => {
-                console.error(error);
-            });
+    refreshToken(process.env.TWITCH_REFRESH, process.env.TWITCH_CLIENT, process.env.TWITCH_SECRET)
+        .catch(error => {
+            console.error(error);
+        });
 });
 
 // Connect to Twitch:
@@ -89,18 +89,18 @@ function onMessageHandler(target, context, msg, self) {
 
     // If the command is known, let's execute it
     if (commandName == '!bpb') {
-        let definition = lookup(body)
-        client.say(target, definition);
-        console.log(context.user + ' searched ' + body + ' in channel ' + target)
+        let searchObject = lookup(body)
+        client.say(target, searchObject.definition);
+        console.log('search: ' + body + ', result: ' + searchObject.item + ', user: ' + context.username + ', channel: ' + target)
     } else if (commandName == '!join') {
         if (target == '#backpackhelpbot') {
             joinChannel(context.username)
-            console.log(context.user + ' joined.')
+            console.log(context.username + ' joined.')
         }
     } else if (commandName == '!leave') {
         if (target == '#backpackhelpbot') {
             leaveChannel(context.username)
-            console.log(context.user + ' left.')
+            console.log(context.username + ' left.')
         }
     }
 }
@@ -122,7 +122,10 @@ function lookup(body) {
             final = final + ' | Cost: ' + item.cost
         }
     }
-    return final
+    return {
+        item: item.display_name,
+        definition: final
+    }
 }
 
 async function joinChannel(username) {
