@@ -272,7 +272,7 @@ export const items = [
         id: 7
     },
     {
-        description: 'Every 2s: Gain 1 Luck, 1 Spikes, or 1 Mana, depending on what you have the least of. Use 7 Block, 7 Luck, 7 Spikes, 7 Mana, and 27 Health: Give the star Weapon +27 damage.',
+        description: 'Every 2s: Gain 1 Luck, 1 Spikes, or 1 Mana, depending on what you have the least of. Use 7 Block, 7 Luck, 7 Spikes, 7 Mana, and 27 Health: Give the star Weapon +27 damage',
         name: 'djinn_lamp',
         display_name: 'Djinn Lamp',
         rarity: 5,
@@ -503,7 +503,7 @@ export const items = [
         id: 28
     },
     {
-        description: 'Every 4s: Gain 3 Block. 30% chance to remove 1 Vampirism from you opponent.',
+        description: 'Every 4s: Gain 3 Block. 30% chance to remove 1 Vampirism from you opponent',
         name: 'garlic',
         display_name: 'Garlic',
         rarity: 1,
@@ -581,7 +581,7 @@ export const items = [
         stamina: '1.2 (0.7/s)',
         accuracy: '95%',
         cooldown: '1.7s',
-        description: 'Opponent misses attack: Gain +2 damage for the next attack. On hit: 35% chance to inflict 1 Blind.',
+        description: 'Opponent misses attack: Gain +2 damage for the next attack. On hit: 35% chance to inflict 1 Blind',
         name: 'broom',
         display_name: 'Broom',
         rarity: 1,
@@ -731,7 +731,7 @@ export const items = [
         stamina: '2.5 (1/s)',
         accuracy: '80%',
         cooldown: '2.4s',
-        description: 'On hit: Gain 1 Spikes. Deals +1 damage per Spikes.',
+        description: 'On hit: Gain 1 Spikes. Deals +1 damage per Spikes',
         name: 'thorn_whip',
         display_name: 'Thorn Whip',
         rarity: 3,
@@ -816,7 +816,7 @@ export const items = [
         id: 51
     },
     {
-        description: 'On reveal: For each card before, gain 3 Mana and remove 3 random buffs from your opponent.',
+        description: 'On reveal: For each card before, gain 3 Mana and remove 3 random buffs from your opponent',
         name: 'darkest_lotus',
         display_name: 'Darkest Lotus',
         rarity: 5,
@@ -827,7 +827,7 @@ export const items = [
         id: 52
     },
     {
-        description: 'On reveal: Deal 10 + 4 damage for each card before. Gain 3 Heat.',
+        description: 'On reveal: Deal 10 + 4 damage for each card before. Gain 3 Heat',
         name: 'holo_fire_lizard',
         display_name: 'Holo Fire Lizard',
         rarity: 4,
@@ -838,7 +838,7 @@ export const items = [
         id: 53
     },
     {
-        description: 'On reveal: Steal 11 life. If the number of cards before is even, gain 2 Regeneration.',
+        description: 'On reveal: Steal 11 life. If the number of cards before is even, gain 2 Regeneration',
         name: 'the_lovers',
         display_name: 'The Lovers',
         rarity: 1,
@@ -849,7 +849,7 @@ export const items = [
         id: 54
     },
     {
-        description: 'On reveal: Gain 12 Block + 3 for each card before. Inflict 3 Cold.',
+        description: 'On reveal: Gain 12 Block + 3 for each card before. Inflict 3 Cold',
         name: 'white_eyes_blue_dragon',
         display_name: 'White Eyes Blue Dragon',
         rarity: 4,
@@ -871,7 +871,7 @@ export const items = [
         id: 56
     },
     {
-        description: 'Health drops below 50%: Consume this and heal 11 and cleanse 4 Poison.',
+        description: 'Health drops below 50%: Consume this and heal 11 and cleanse 4 Poison',
         name: 'health_potion',
         display_name: 'Health Potion',
         rarity: 2,
@@ -903,7 +903,7 @@ export const items = [
         cost: 6
     },
     {
-        description: 'Can only be thrown once per battle. On hit: Inflict 3 Cold. Star Weapon hits: Inflict 1 Cold.',
+        description: 'Can only be thrown once per battle. On hit: Inflict 3 Cold. Star Weapon hits: Inflict 1 Cold',
         display_name: 'Artifact Stone: Cold',
         cost: 10
     },
@@ -923,7 +923,7 @@ export const items = [
         cost: 12
     },
     {
-        description: 'On attacked (melee): 35% chance to prevent 4 damage and remove 0.3 stamina from opponent.',
+        description: 'On attacked (melee): 35% chance to prevent 4 damage and remove 0.3 stamina from opponent',
         display_name: 'Wooden Buckler',
         cost: 4
     },
@@ -933,12 +933,12 @@ export const items = [
         cost: 6
     },
     {
-        description: 'Weapon socket: On hit: 20% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 15%. Backpack: Every 8s: Cleanse a random debuff.',
+        description: 'Weapon socket: On hit: 20% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 15%. Backpack: Every 8s: Cleanse a random debuff',
         display_name: 'Chipped Amethyst',
         cost: 1
     },
     {
-        description: 'Weapon socket: On hit: 30% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 20%. Backpack: Every 6s: Cleanse a random debuff.',
+        description: 'Weapon socket: On hit: 30% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 20%. Backpack: Every 6s: Cleanse a random debuff',
         name: 'flawed_amethyst',
         display_name: 'Flawed Amethyst',
         rarity: 2,
@@ -949,7 +949,7 @@ export const items = [
         id: 69
     },
     {
-        description: 'Weapon socket: On hit: 45% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 25%. Backpack: Every 5s: Cleanse a random debuff.',
+        description: 'Weapon socket: On hit: 45% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 25%. Backpack: Every 5s: Cleanse a random debuff',
         name: 'regular_amethyst',
         display_name: 'Regular Amethyst',
         rarity: 3,
@@ -960,7 +960,7 @@ export const items = [
         id: 70
     },
     {
-        description: 'Weapon socket: On hit: 65% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 30%. Backpack: Every 4s: Cleanse a random debuff.',
+        description: 'Weapon socket: On hit: 65% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 30%. Backpack: Every 4s: Cleanse a random debuff',
         name: 'flawless_amethyst',
         display_name: 'Flawless Amethyst',
         rarity: 4,
@@ -971,7 +971,7 @@ export const items = [
         id: 71
     },
     {
-        description: 'Weapon socket: On hit: 100% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 40%. Backpack: Every 2.5s: Cleanse a random debuff.',
+        description: 'Weapon socket: On hit: 100% chance to remove a random buff from your opponent. Armor & other sockets: Your opponents healing is reduced by 40%. Backpack: Every 2.5s: Cleanse a random debuff',
         name: 'perfect_amethyst',
         display_name: 'Perfect Amethyst',
         rarity: 5,
@@ -982,7 +982,7 @@ export const items = [
         id: 72
     },
     {
-        description: 'Weapon socket: 25% chance to inflict 1 Poison. Armor & other sockets: 10% chance to resist Poison. Backpack: Every 13s: Use 1 Poison of your opponent to gain 2 Regeneration.',
+        description: 'Weapon socket: 25% chance to inflict 1 Poison. Armor & other sockets: 10% chance to resist Poison. Backpack: Every 13s: Use 1 Poison of your opponent to gain 2 Regeneration',
         name: 'chipped_emerald',
         display_name: 'Chipped Emerald',
         rarity: 1,
@@ -993,7 +993,7 @@ export const items = [
         id: 73
     },
     {
-        description: 'Weapon socket: 35% chance to inflict 1 Poison. Armor & other sockets: 15% chance to resist Poison. Backpack: Every 11s: Use 1 Poison of your opponent to gain 2 Regeneration.',
+        description: 'Weapon socket: 35% chance to inflict 1 Poison. Armor & other sockets: 15% chance to resist Poison. Backpack: Every 11s: Use 1 Poison of your opponent to gain 2 Regeneration',
         name: 'flawed_emerald',
         display_name: 'Flawed Emerald',
         rarity: 2,
@@ -1004,7 +1004,7 @@ export const items = [
         id: 74
     },
     {
-        description: 'Weapon socket: 50% chance to inflict 1 Poison. Armor & other sockets: 20% chance to resist Poison. Backpack: Every 9s: Use 1 Poison of your opponent to gain 2 Regeneration.',
+        description: 'Weapon socket: 50% chance to inflict 1 Poison. Armor & other sockets: 20% chance to resist Poison. Backpack: Every 9s: Use 1 Poison of your opponent to gain 2 Regeneration',
         name: 'regular_emerald',
         display_name: 'Regular Emerald',
         rarity: 3,
@@ -1015,7 +1015,7 @@ export const items = [
         id: 75
     },
     {
-        description: 'Weapon socket: 60% chance to inflict 1 Poison. Armor & other sockets: 25% chance to resist Poison. Backpack: Every 7s: Use 1 Poison of your opponent to gain 2 Regeneration.',
+        description: 'Weapon socket: 60% chance to inflict 1 Poison. Armor & other sockets: 25% chance to resist Poison. Backpack: Every 7s: Use 1 Poison of your opponent to gain 2 Regeneration',
         name: 'flawless_emerald',
         display_name: 'Flawless Emerald',
         rarity: 4,
@@ -1026,7 +1026,7 @@ export const items = [
         id: 76
     },
     {
-        description: 'Weapon socket: 80% chance to inflict 1 Poison. Armor & other sockets: 35% chance to resist Poison. Backpack: Every 4s: Use 1 Poison of your opponent to gain 2 Regeneration.',
+        description: 'Weapon socket: 80% chance to inflict 1 Poison. Armor & other sockets: 35% chance to resist Poison. Backpack: Every 4s: Use 1 Poison of your opponent to gain 2 Regeneration',
         name: 'perfect_emerald',
         display_name: 'Perfect Emerald',
         rarity: 5,
@@ -1037,7 +1037,7 @@ export const items = [
         id: 77
     },
     {
-        description: 'Weapon socket: Lifesteal 10% of damage dealt. Armor & other sockets: Increase healing by 10%. Backpack: Every 5s: Steal 1 life.',
+        description: 'Weapon socket: Lifesteal 10% of damage dealt. Armor & other sockets: Increase healing by 10%. Backpack: Every 5s: Steal 1 life',
         name: 'chipped_ruby',
         display_name: 'Chipped Ruby',
         rarity: 1,
@@ -1048,7 +1048,7 @@ export const items = [
         id: 78
     },
     {
-        description: 'Weapon socket: Lifesteal 15% of damage dealt. Armor & other sockets: Increase healing by 15%. Backpack: Every 4s: Steal 1 life.',
+        description: 'Weapon socket: Lifesteal 15% of damage dealt. Armor & other sockets: Increase healing by 15%. Backpack: Every 4s: Steal 1 life',
         name: 'flawed_ruby',
         display_name: 'Flawed Ruby',
         rarity: 2,
@@ -1059,7 +1059,7 @@ export const items = [
         id: 79
     },
     {
-        description: 'Weapon socket: Lifesteal 20% of damage dealt. Armor & other sockets: Increase healing by 20%. Backpack: Every 4s: Steal 2 life.',
+        description: 'Weapon socket: Lifesteal 20% of damage dealt. Armor & other sockets: Increase healing by 20%. Backpack: Every 4s: Steal 2 life',
         name: 'regular_ruby',
         display_name: 'Regular Ruby',
         rarity: 3,
@@ -1070,62 +1070,62 @@ export const items = [
         id: 80
     },
     {
-        description: 'Weapon socket: Lifesteal 25% of damage dealt. Armor & other sockets: Increase healing by 25%. Backpack: Every 4s: Steal 3 life.',
+        description: 'Weapon socket: Lifesteal 25% of damage dealt. Armor & other sockets: Increase healing by 25%. Backpack: Every 4s: Steal 3 life',
         display_name: 'Flawless Ruby',
         cost: 8
     },
     {
-        description: 'Weapon socket: Lifesteal 35% of damage dealt. Armor & other sockets: Increase healing by 35%. Backpack: Every 4s: Steal 5 life.',
+        description: 'Weapon socket: Lifesteal 35% of damage dealt. Armor & other sockets: Increase healing by 35%. Backpack: Every 4s: Steal 5 life',
         display_name: 'Perfect Ruby',
         cost: 16
     },
     {
-        description: 'Weapon socket: 20% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 2 Block. Backpack: Every 11s: Inflict 1 Cold.',
+        description: 'Weapon socket: 20% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 2 Block. Backpack: Every 11s: Inflict 1 Cold',
         display_name: 'Chipped Sapphire',
         cost: 1
     },
     {
-        description: 'Weapon socket: 30% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 3 Block. Backpack: Every 9s: Inflict 1 Cold.',
+        description: 'Weapon socket: 30% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 3 Block. Backpack: Every 9s: Inflict 1 Cold',
         display_name: 'Flawed Sapphire',
         cost: 2
     },
     {
-        description: 'Weapon socket: 50% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 4 Block. Backpack: Every 7s: Inflict 1 Cold.',
+        description: 'Weapon socket: 50% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 4 Block. Backpack: Every 7s: Inflict 1 Cold',
         display_name: 'Regular Sapphire',
         cost: 4
     },
     {
-        description: 'Weapon socket: 70% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 5 Block. Backpack: Every 5s: Inflict 1 Cold.',
+        description: 'Weapon socket: 70% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 5 Block. Backpack: Every 5s: Inflict 1 Cold',
         display_name: 'Flawless Sapphire',
         cost: 8
     },
     {
-        description: 'Weapon socket: 100% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 7 Block. Backpack: Every 3.5s: Inflict 1 Cold.',
+        description: 'Weapon socket: 100% chance to attack health directly, gain 1 Mana, and inflict 1 Cold. Armor & other sockets: 5 Mana gained: Gain 7 Block. Backpack: Every 3.5s: Inflict 1 Cold',
         display_name: 'Perfect Sapphire',
         cost: 16
     },
     {
-        description: 'Weapon socket: Attacks 10% faster. Armor & other sockets: 15% chance to resist a stun. Backpack: Every 11.5s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower.',
+        description: 'Weapon socket: Attacks 10% faster. Armor & other sockets: 15% chance to resist a stun. Backpack: Every 11.5s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower',
         display_name: 'Chipped Topaz',
         cost: 1
     },
     {
-        description: 'Weapon socket: Attacks 15% faster. Armor & other sockets: 20% chance to resist a stun. Backpack: Every 9s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower.',
+        description: 'Weapon socket: Attacks 15% faster. Armor & other sockets: 20% chance to resist a stun. Backpack: Every 9s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower',
         display_name: 'Flawed Topaz',
         cost: 2
     },
     {
-        description: 'Weapon socket: Attacks 20% faster. Armor & other sockets: 25% chance to resist a stun. Backpack: Every 7s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower.',
+        description: 'Weapon socket: Attacks 20% faster. Armor & other sockets: 25% chance to resist a stun. Backpack: Every 7s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower',
         display_name: 'Regular Topaz',
         cost: 4
     },
     {
-        description: 'Weapon socket: Attacks 25% faster. Armor & other sockets: 35% chance to resist a stun. Backpack: Every 5s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower.',
+        description: 'Weapon socket: Attacks 25% faster. Armor & other sockets: 35% chance to resist a stun. Backpack: Every 5s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower',
         display_name: 'Flawless Topaz',
         cost: 8
     },
     {
-        description: 'Weapon socket: Attacks 35% faster. Armor & other sockets: 50% chance to resist a stun. Backpack: Every 3.5s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower.',
+        description: 'Weapon socket: Attacks 35% faster. Armor & other sockets: 50% chance to resist a stun. Backpack: Every 3.5s: Regenerate 1 stamina. When your stamina is full, gain 1 Empower',
         display_name: 'Perfect Topaz',
         cost: 16
     },
@@ -1134,7 +1134,7 @@ export const items = [
         stamina: '1.7 (0.7/s)',
         accuracy: '95%',
         cooldown: '2.4s',
-        description: 'On hit: 40% chance to inflict 1 Blind. Shop entered: Dig up a random item.',
+        description: 'On hit: 40% chance to inflict 1 Blind. Shop entered: Dig up a random item',
         display_name: 'Shovel',
         recipe: 'Broom + Pan'
     },
@@ -1145,7 +1145,7 @@ export const items = [
         cooldown: '1.4s',
         description: 'On hit: 25% chance to gain 1 damage',
         display_name: 'Torch',
-        recipe: 'Coal + Wooden Shield'
+        recipe: 'Coal + Wooden Sword'
     },
     {
         description: 'On attacked (Melee): 35% chance to prevent 4 damage, remove 0.3 stamina from opponent, and gain 1 Spikes (up to 3)',
@@ -1153,7 +1153,7 @@ export const items = [
         recipe: 'Tusk + Wooden Buckler'
     },
     {
-        description: 'Weapon socket: 12% chance to deal +6 damage and gain 1 Heat. Armor & other sockets: Start of battle: Gain 15 Block, resist 3 Cold. Backpack: After 5s: Gain 2 Heat, cleanse 3 debuffs.',
+        description: 'Weapon socket: 12% chance to deal +6 damage and gain 1 Heat. Armor & other sockets: Start of battle: Gain 15 Block, resist 3 Cold. Backpack: After 5s: Gain 2 Heat, cleanse 3 debuffs',
         display_name: 'Burning Coal',
         recipe: 'Coal + fire source'
     },
@@ -1167,7 +1167,7 @@ export const items = [
         stamina: '0.7 (0.5/s)',
         accuracy: '90%',
         cooldown: '1.4s',
-        description: 'Start of battle: Star weapons gain 2 damage.',
+        description: 'Start of battle: Star weapons gain 2 damage',
         display_name: 'Hero Sword',
         recipe: 'Whetstone + Whetstone + Wooden Sword'
     },
@@ -1176,7 +1176,7 @@ export const items = [
         stamina: '0 (0/s)',
         accuracy: '95%',
         cooldown: '3s',
-        description: 'On hit: Inflict 2 Poison. On stun: Triggers extra attack.',
+        description: 'On hit: Inflict 2 Poison. On stun: Triggers extra attack',
         display_name: 'Poison Dagger',
         recipe: 'Dagger + Pestilence Flask'
     },
@@ -1194,7 +1194,7 @@ export const items = [
         stamina: '1 (0.7/s)',
         accuracy: '90%',
         cooldown: '1.4s',
-        description: 'Start of battle: Gain 2 Heat. On hit: 30% chance to gain 1 damage. If you have at least 15 Heat, gain 2 damage instead.',
+        description: 'Start of battle: Gain 2 Heat. On hit: 30% chance to gain 1 damage. If you have at least 15 Heat, gain 2 damage instead',
         display_name: 'Burning Torch',
         recipe: 'Torch + fire source'
     },
@@ -1203,23 +1203,23 @@ export const items = [
         stamina: '1 (0.5/s)',
         accuracy: '90%',
         cooldown: '2s',
-        description: 'On attack: Use 3 Mana to deal +6 damage and increase its damage by 2 until the end of battle.',
+        description: 'On attack: Use 3 Mana to deal +6 damage and increase its damage by 2 until the end of battle',
         display_name: 'Magic Staff',
         recipe: 'Broom + Mana Orb'
     },
     {
         display_name: 'Strong Health Potion',
-        description: 'Health drops below 50%: Consume this and heal for 18, gain 2 Regeneration, and cleanse 4 Poison.',
+        description: 'Health drops below 50%: Consume this and heal for 18, gain 2 Regeneration, and cleanse 4 Poison',
         recipe: 'Healing Herbs + Health Potion'
     },
     {
         display_name: 'Mana Potion',
-        description: 'Mana used or health drops below 50%: Consume this and gain 4 Mana and 15 maximum health.',
+        description: 'Mana used or health drops below 50%: Consume this and gain 4 Mana and 15 maximum health',
         recipe: 'Blueberry + Health Potion'
     },
     {
         display_name: 'Platinum Customer Card',
-        description: 'Reflect 2 debuffs per Star Legendary, Godly, and Unique item. Increases chance to find Unique items by 10%. You can obtain +1 Unique item.',
+        description: 'Reflect 2 debuffs per Star Legendary, Godly, and Unique item. Increases chance to find Unique items by 10%. You can obtain +1 Unique item',
         recipe: 'Customer Card + Customer Card'
     },
     {
@@ -1228,7 +1228,7 @@ export const items = [
         accuracy: '95%',
         cooldown: '2.5s',
         display_name: 'Spectral Dagger',
-        description: 'On attack: Use 1 Mana to attack health directly and deal +7 damage. On stun: Triggers extra attack.',
+        description: 'On attack: Use 1 Mana to attack health directly and deal +7 damage. On stun: Triggers extra attack',
         recipe: 'Dagger + Mana Potion'
     },
     {
@@ -1242,17 +1242,17 @@ export const items = [
     },
     {
         display_name: 'Carrot Goobert',
-        description: '5 Star item activations: Cleanse 3 random debuffs and gain 2 Empower for 4s.',
+        description: '5 Star item activations: Cleanse 3 random debuffs and gain 2 Empower for 4s',
         recipe: 'Carrot + Carrot + Goobert'
     },
     {
         display_name: 'Steel Goobert',
-        description: '5 Star item activations: Diamond Weapons gain +2 damage. Gain 16 Block.',
+        description: '5 Star item activations: Diamond Weapons gain +2 damage. Gain 16 Block',
         recipe: 'Goobert + Hero Sword'
     },
     {
         display_name: 'Lucky Piggy',
-        description: 'Shop entered: Gain 1 gold. Start of battle: Gain 2 Luck. Chance-based effects of the Star item are 25% more likely to trigger.',
+        description: 'Shop entered: Gain 1 gold. Start of battle: Gain 2 Luck. Chance-based effects of the Star item are 25% more likely to trigger',
         recipe: 'Lucky Clover + Lucky Clover + Piggybank'
     },
     {
@@ -1279,7 +1279,7 @@ export const items = [
         accuracy: '90%',
         cooldown: '1.5s',
         display_name: 'Eggscalibur',
-        description: 'Deals +1 damage for each Star food. On attack: Use 12 Mana: Trigger all Star food.',
+        description: 'Deals +1 damage for each Star food. On attack: Use 12 Mana: Trigger all Star food',
         recipe: 'Heroic Potion + Pan'
     },
     {
@@ -1302,7 +1302,7 @@ export const items = [
     },
     {
         display_name: 'Strong Stone Skin Potion',
-        description: 'When you have at least 20 Block: Consume this and convert 15 health to 35 Block and gain 2 Spikes for 4s.',
+        description: 'When you have at least 20 Block: Consume this and convert 15 health to 35 Block and gain 2 Spikes for 4s',
         recipe: 'Stone + Stone + Stone Skin Potion'
     },
     {
@@ -1311,7 +1311,7 @@ export const items = [
         accuracy: '95%',
         cooldown: '3s',
         display_name: 'Bloody Dagger',
-        description: 'On hit: Gain 1 Vampirism (up to 5 per battle). Heal 4 per Star Vampiric Item. On stun: Triggers extra attack.',
+        description: 'On hit: Gain 1 Vampirism (up to 5 per battle). Heal 4 per Star Vampiric Item. On stun: Triggers extra attack',
         recipe: 'Blood Gem + Dagger'
     },
     {
@@ -1320,7 +1320,7 @@ export const items = [
         accuracy: '200%',
         cooldown: '1.4s',
         display_name: 'Manathirst',
-        description: 'On hit: Gain 1 Mana. 20 Mana gained: Steal 10 life, increased by 1 for each Vampirism.',
+        description: 'On hit: Gain 1 Mana. 20 Mana gained: Steal 10 life, increased by 1 for each Vampirism',
         recipe: 'Hungry Blade + Mana Orb'
     },
     {
@@ -1330,17 +1330,17 @@ export const items = [
     },
     {
         display_name: 'Vampiric Armor',
-        description: 'Start of battle: Convert 30 health into 60 Block and gain 2 Vampirism. Every 3s: Convert 10 health into 20 Block.',
+        description: 'Start of battle: Convert 30 health into 60 Block and gain 2 Vampirism. Every 3s: Convert 10 health into 20 Block',
         recipe: 'Blood Gem + Leather Armor'
     },
     {
         display_name: 'Strong Pestilence Flask',
-        description: 'Opponent regenerates health: Consume this and inflice 3 Poison and 1 Poison to yourself. After 6s, inflict another 3 Poison.',
+        description: 'Opponent regenerates health: Consume this and inflice 3 Poison and 1 Poison to yourself. After 6s, inflict another 3 Poison',
         recipe: 'Fly Argaric + Pestilence Flask'
     },
     {
         display_name: 'Blood Goobert',
-        description: 'Start of battle: Gain 2 Vampirism. 6 item activations: Steal 10 life, increased by 1 for each Vampirism.',
+        description: 'Start of battle: Gain 2 Vampirism. 6 item activations: Steal 10 life, increased by 1 for each Vampirism',
         recipe: 'Blood Gem + Goobert'
     },
     {
@@ -1349,7 +1349,7 @@ export const items = [
         accuracy: '85%',
         cooldown: '3s',
         display_name: 'Tusk Piercer',
-        description: 'Start of battle: Gain 2 Spikes. Star Weapon hits: Use 1 Spikes: Next attack with Tusk Piercer deals +8 damage.',
+        description: 'Start of battle: Gain 2 Spikes. Star Weapon hits: Use 1 Spikes: Next attack with Tusk Piercer deals +8 damage',
         recipe: 'Bow and Arrow + Tusk'
     },
     {
@@ -1363,7 +1363,7 @@ export const items = [
     },
     {
         display_name: 'Vampiric Gloves',
-        description: 'After 4s: Gain 5 Vampirism, Star items trigger 35% faster.',
+        description: 'After 4s: Gain 5 Vampirism, Star items trigger 35% faster',
         recipe: 'Blood Gem + Gloves of Haste'
     },
     {
@@ -1381,19 +1381,19 @@ export const items = [
         accuracy: '90%',
         cooldown: '1.6s',
         display_name: 'Bloodthorne',
-        description: 'On hit: Convert 1 Regeneration into 1 Vampirism and 1 Spikes. Deals +1 damage for each Vampirism and Spikes.',
+        description: 'On hit: Convert 1 Regeneration into 1 Vampirism and 1 Spikes. Deals +1 damage for each Vampirism and Spikes',
         recipe: "Hungry Blade + Thorn Whip"
     },
     {
         display_name: 'Light Goobert',
-        description: '6 item activations: Heal for 20 and inflict 6 Blind for 3s.',
+        description: '6 item activations: Heal for 20 and inflict 6 Blind for 3s',
         recipe: 'Goobert + Lightsaber'
     },
     {
         display_name: 'Staff of Unhealing',
         stamina: '1.5 (0.8/s)',
         cooldown: '2s',
-        description: 'Every 2s: Heal for 10. Use 6 Mana: For 2s, healing also deals damage.',
+        description: 'Every 2s: Heal for 10. Use 6 Mana: For 2s, healing also deals damage',
         recipe: 'Demonic Flask + Magic Staff'
     },
     {
@@ -1402,7 +1402,7 @@ export const items = [
         accuracy: '95%',
         cooldown: '1.5s',
         display_name: 'Darksaber',
-        description: 'Deal +0.5 damage for each debuff of your opponent. On attack: Use 1 Mana to inflict 1 Blind.',
+        description: 'Deal +0.5 damage for each debuff of your opponent. On attack: Use 1 Mana to inflict 1 Blind',
         recipe: 'Corrupted Crystal + Lightsaber'
     },
     {
@@ -1411,7 +1411,7 @@ export const items = [
         accuracy: '100%',
         cooldown: '1.5s',
         display_name: 'Crossblades',
-        description: 'Start of battle: The Star Weapon gains 10 damage. The diamond item triggers 60% faster.',
+        description: 'Start of battle: The Star Weapon gains 10 damage. The diamond item triggers 60% faster',
         recipe: 'Falcon Blade + Hero Longsword'
     },
     {
@@ -1425,7 +1425,7 @@ export const items = [
     },
     {
         display_name: 'Rainbow Goobert Megasludge Alphapuddle',
-        description: '6 item activations: Heal for 20, gain 20 Block, 2 Vampirism and 2 Empower, inflict 4 Blind, and give Star Weapons +4 damage.',
+        description: '6 item activations: Heal for 20, gain 20 Block, 2 Vampirism and 2 Empower, inflict 4 Blind, and give Star Weapons +4 damage',
         recipe: 'Blood Goobert + Carrot Goobert + Goobert + Light Goobert + Steel Goobert'
     },
     {
@@ -1439,12 +1439,12 @@ export const items = [
         accuracy: '90%',
         cooldown: '2s',
         display_name: 'Ruby Chonk',
-        description: 'On hit: Gain 1 Heat. When you have at least 15 Heat, has a 30% chance to stun your opponent for 0.4s.',
+        description: 'On hit: Gain 1 Heat. When you have at least 15 Heat, has a 30% chance to stun your opponent for 0.4s',
         recipe: 'Holo Fire Lizard + Ruby Whelp'
     },
     {
         display_name: 'Rainbow Goobert Omegaooze Primeslime',
-        description: '6 item activations: Heal for 20, gain 20 Block and 2 Vampirism, inflict 4 Blind and 4 Poison, and give Star Weapons +4 damage.',
+        description: '6 item activations: Heal for 20, gain 20 Block and 2 Vampirism, inflict 4 Blind and 4 Poison, and give Star Weapons +4 damage',
         recipe: 'Blood Goobert + Light Goobert + Goobert + Poison Goobert + Steel Goobert'
     },
     {
@@ -1454,32 +1454,32 @@ export const items = [
     },
     {
         display_name: 'Tim',
-        description: 'Weapon socket: On hit: 50% chance to steal a random buff from your opponent. Armor & other sockets: 30% chance to resist a debuff or crit. Backpack: Opponent drops below 30% health: Heal for 50 and gain 5 empower.',
+        description: 'Weapon socket: On hit: 50% chance to steal a random buff from your opponent. Armor & other sockets: 30% chance to resist a debuff or crit. Backpack: Opponent drops below 30% health: Heal for 50 and gain 5 empower',
         cost: 11
     },
     {
-        display_name: 'Jerry',
-        description: 'Start of battle: Gain 40 maximum health. Every 3s: Use 1 Luck, 1 Heat, and 1 Mana: Gain 1 Empower, 3 Regeneration, and 20 maximum health.',
+        display_name: 'Gingerbread Jerry',
+        description: 'Start of battle: Gain 40 maximum health. Every 3s: Use 1 Luck, 1 Heat, and 1 Mana: Gain 1 Empower, 3 Regeneration, and 20 maximum health',
         cost: 8
     },
     {
         display_name: 'Mr. Struggles',
-        description: 'Every 3s: Inflict Fatigue damage. On debuffed: 35% chance to inflict the same debuff. Health drops below 50%: Star items trigger 100% faster for 3s.',
+        description: 'Every 3s: Inflict Fatigue damage. On debuffed: 35% chance to inflict the same debuff. Health drops below 50%: Star items trigger 100% faster for 3s',
         cost: 10
     },
     {
         display_name: 'Piercing Arrow',
-        description: 'Star Weapons deal +30% critical damage. They remove 5 Block on crit.',
+        description: 'Star Weapons deal +30% critical damage. They remove 5 Block on crit',
         cost: 10
     },
     {
         display_name: 'Yggdrasil Leaf',
-        description: 'Start of battle: Gain 1 Mana and 1 Regeneration for each Star Nature item. 5 Mana used: Heal for 5 and cleanse 2 debuffs.',
+        description: 'Start of battle: Gain 1 Mana and 1 Regeneration for each Star Nature item. 5 Mana used: Heal for 5 and cleanse 2 debuffs',
         cost: 10
     },
     {
         display_name: 'Poison Ivy',
-        description: 'You have a 5% chance to resist debuffs for each Star Nature item. Spike gained: Inflict 2 Poison. Opponent reaches 19 Poison: They take +20% damage.',
+        description: 'You have a 5% chance to resist debuffs for each Star Nature item. Spike gained: Inflict 2 Poison. Opponent reaches 19 Poison: They take +20% damage',
         cost: 10
     },
     {
@@ -1488,30 +1488,30 @@ export const items = [
         accuracy: '95%',
         cooldown: '2.2s',
         display_name: 'Cursed Dagger',
-        description: 'On stun: Triggers extra attack. On hit: Inflict 2 random debuffs. This and Star items have +1% accurace and +1% crit chance per debuff of your opponent.',
+        description: 'On stun: Triggers extra attack. On hit: Inflict 2 random debuffs. This and Star items have +1% accurace and +1% crit chance per debuff of your opponent',
         cost: 10
     },
     {
         display_name: 'Nocturnal Lock Lifter',
-        description: 'Start of battle: Gain 2 Vampirism. Star Weapons steal 20% life. Your healing is amplified by 25%. Your Poison steals life through Vampirism.',
+        description: 'Start of battle: Gain 2 Vampirism. Star Weapons steal 20% life. Your healing is amplified by 25%. Your Poison steals life through Vampirism',
         cost: 10
     },
     {
         display_name: 'Ranger Bag',
-        description: 'Add 6 backpack slots. Items inside gain 10% critical hit chance + 3% for each Luck.'
+        description: 'Add 6 backpack slots. Items inside gain 10% critical hit chance + 3% for each Luck'
     },
     {
         display_name: 'Storage Coffin',
-        description: 'Add 8 backpack slots. Item inside activates: 25% chance to inflict 1 Poison.'
+        description: 'Add 8 backpack slots. Item inside activates: 25% chance to inflict 1 Poison'
     },
     {
         display_name: 'Moon Shield',
-        description: 'Star items give +30% Black. For ever 12 Block they gain, gain 1 Mana. On attacked: 35% chance to prevent 12 damage and remove 0.7 stamina from your opponent.',
+        description: 'Star items give +30% Black. For ever 12 Block they gain, gain 1 Mana. On attacked: 35% chance to prevent 12 damage and remove 0.7 stamina from your opponent',
         recipe: 'Mana Orb + Shield of Valor'
     },
     {
         display_name: 'Corrupted Armor',
-        description: '10% chance for each Star Dark item to protect debuffs on your opponent from being cleansed. Start of battle: Gain 70 Block. Ever 3s: Cleanse 2 debuffs and inflict them on your opponent.',
+        description: '10% chance for each Star Dark item to protect debuffs on your opponent from being cleansed. Start of battle: Gain 70 Block. Ever 3s: Cleanse 2 debuffs and inflict them on your opponent',
         recipe: 'Corrupted Crystal + Holy Armor'
     },
     {
@@ -1520,12 +1520,12 @@ export const items = [
         accuracy: '85%',
         cooldown: '2s',
         display_name: 'Dancing Dragon',
-        description: 'Deals +1 damager per Heat. You have a 2% chance to resist debuffs for each Luck. Start of battle: Gain 1 Heat and 1 Luck for each Star Magic item.',
-        cost: 10
+        description: 'Deals +1 damager per Heat. You have a 2% chance to resist debuffs for each Luck. Start of battle: Gain 1 Heat and 1 Luck for each Star Magic item',
+        cost: 12
     },
     {
         display_name: 'Wolpertinger',
-        description: 'Increase stamina regeneration by 1% for each buff you have. Every 5s: Gain 3 of the buff you have the least of. Triggers 15% faster for each Star Pet.',
+        description: 'Increase stamina regeneration by 1% for each buff you have. Every 5s: Gain 3 of the buff you have the least of. Triggers 15% faster for each Star Pet',
         cost: 12
     },
 ]
