@@ -283,7 +283,7 @@ export const items = [
         id: 8
     },
     {
-        description: 'Every 1s: Remove 1 stamina from your opponent. Increase cooldown by 0.8s. 5 star items in front: After 5 activations of Fanfare, stun for 1s',
+        description: 'Randomly gain 1 Empower or 3 Mana and remove 2 Mana from opponent or remove 1 stamina from opponent. Triggers 10% faster for each Star item.',
         name: 'fanfare',
         display_name: 'Fanfare',
         rarity: 4,
@@ -1190,7 +1190,7 @@ export const items = [
         recipe: 'Gloves of Haste + Tusk'
     },
     {
-        damage: '2-4 (2.1/s)',
+        damage: '3-5 (2.9/s)',
         stamina: '1 (0.7/s)',
         accuracy: '90%',
         cooldown: '1.4s',
@@ -1199,7 +1199,7 @@ export const items = [
         recipe: 'Torch + fire source'
     },
     {
-        damage: '4-6 (2.5/s)',
+        damage: '5-7 (3/s)',
         stamina: '1 (0.5/s)',
         accuracy: '90%',
         cooldown: '2s',
@@ -1302,7 +1302,7 @@ export const items = [
     },
     {
         display_name: 'Strong Stone Skin Potion',
-        description: 'When you have at least 20 Block: Consume this and convert 15 health to 35 Block and gain 2 Spikes for 4s',
+        description: 'When you have at least 45 Block: Consume this and convert 15 health to 35 Block and gain 2 Spikes for 4s',
         recipe: 'Stone + Stone + Stone Skin Potion'
     },
     {
@@ -1464,7 +1464,7 @@ export const items = [
     },
     {
         display_name: 'Mr. Struggles',
-        description: 'Every 3s: Inflict Fatigue damage. On debuffed: 35% chance to inflict the same debuff. Health drops below 50%: Star items trigger 100% faster for 3s',
+        description: 'Every 3s: Inflict Fatigue damage. On debuffed: 35% chance to inflict the same debuff. Health drops below 50%: Star items trigger 100% faster for 5s',
         cost: 10
     },
     {
@@ -1511,7 +1511,7 @@ export const items = [
     },
     {
         display_name: 'Corrupted Armor',
-        description: '10% chance for each Star Dark item to protect debuffs on your opponent from being cleansed. Start of battle: Gain 70 Block. Ever 3s: Cleanse 2 debuffs and inflict them on your opponent',
+        description: 'Star Holy items are Dark. 10% chance for each Star Dark item to protect debuffs on your opponent from being cleansed. Start of battle: Gain 70 Block. Ever 3s: Cleanse 2 debuffs and inflict them on your opponent',
         recipe: 'Corrupted Crystal + Holy Armor'
     },
     {
@@ -1525,7 +1525,12 @@ export const items = [
     },
     {
         display_name: 'Wolpertinger',
-        description: 'Increase stamina regeneration by 1% for each buff you have. Every 5s: Gain 3 of the buff you have the least of. Triggers 15% faster for each Star Pet',
+        description: 'Increase stamina regeneration by 0.7% for each buff you have. Every 5s: Gain 3 of the buff you have the least of. Triggers 15% faster for each Star Pet',
+        cost: 12
+    },
+    {
+        display_name: 'Heart Container',
+        description: 'Every 3s: Gain 1 Regeneration. User 7 Regeneration: Gain 80 maximum health, 3 Empower and your healing is increased by 15% (once)',
         cost: 12
     },
 ]
