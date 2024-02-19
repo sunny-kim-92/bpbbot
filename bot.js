@@ -48,7 +48,8 @@ const opts = {
     },
     channels: [
         'backpackhelpbot',
-        'howdy2yall'
+        'howdy2yall',
+        'reharded'
     ]
 };
 
