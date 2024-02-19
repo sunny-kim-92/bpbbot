@@ -44,7 +44,6 @@ const opts = {
     identity: {
         username: 'backpackhelpbot',
         password: 'oauth:' + access
-        // password: 'oauth:wzltm42y54ihcu3m90to5qdr6pqbuy'
     },
     channels: [
         'backpackhelpbot',
@@ -84,12 +83,12 @@ function onMessageHandler(target, context, msg, self) {
 
     // Remove whitespace from chat message
     const commandName = msg.trim().split(' ')[0]
-    const bodyArr = msg.trim().split(' ')
-    bodyArr.shift()
-    const body = bodyArr.join(' ')
 
     // If the command is known, let's execute it
     if (commandName == '!bpb') {
+        const bodyArr = msg.trim().split(' ')
+        bodyArr.shift()
+        const body = bodyArr.join(' ')
         let searchObject = lookup(body)
         client.say(target, searchObject.result);
         console.log('search: ' + body + ', result: ' + searchObject.item + ', user: ' + context.username + ', channel: ' + target)
@@ -152,5 +151,5 @@ async function leaveChannel(username) {
 
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler(addr, port) {
-    console.log(`* Connected to ${addr}:${port}`);
+    // console.log(`* Connected to ${addr}:${port}`);
 }
