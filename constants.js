@@ -437,7 +437,7 @@ export const items = [
         id: 22
     },
     {
-        description: 'Add 1 backpack slot. Start of battle: Gain 5 Block',
+        description: 'Add 1 backpack slot. Start of battle: Gain 6 Block',
         name: 'protective_purse',
         display_name: 'Protective Purse',
         rarity: 5,
@@ -607,10 +607,10 @@ export const items = [
         id: 36
     },
     {
-        damage: '10-16 (8.1/s)',
-        stamina: '1 (0.6/s)',
+        damage: '10-16 (8.7/s)',
+        stamina: '1 (0.7/s)',
         accuracy: '60%',
-        cooldown: '1.6s',
+        cooldown: '1.5s',
         description: 'On hit: Use 3 Luck to gain 3 damage. On miss: Gain 3 Luck',
         name: 'fancy_fencing_rapier',
         display_name: 'Fancy Fencing Rapier',
@@ -1339,7 +1339,7 @@ export const items = [
     },
     {
         display_name: 'Strong Pestilence Flask',
-        description: 'Opponent regenerates health: Consume this and inflice 3 Poison and 1 Poison to yourself. After 6s, inflict another 3 Poison',
+        description: 'Opponent regenerates health: Consume this and inflice 3 Poison and 1 Poison to yourself. After 7s, inflict another 3 Poison',
         recipe: 'Fly Argaric + Pestilence Flask'
     },
     {
@@ -1397,7 +1397,7 @@ export const items = [
         display_name: 'Staff of Unhealing',
         stamina: '1.5 (0.8/s)',
         cooldown: '2s',
-        description: 'Every 2s: Heal for 10. Use 6 Mana: For 2s, healing also deals damage',
+        description: 'Every 2s: Heal for 11. Use 6 Mana: For 2s, healing also deals damage',
         recipe: 'Demonic Flask + Magic Staff'
     },
     {
@@ -1443,7 +1443,7 @@ export const items = [
         accuracy: '90%',
         cooldown: '2s',
         display_name: 'Ruby Chonk',
-        description: 'On hit: Gain 1 Heat. When you have at least 15 Heat, has a 30% chance to stun your opponent for 0.4s',
+        description: 'On hit: Gain 1 Heat. When you have at least 12 Heat, has a 30% chance to stun your opponent for 0.4s',
         recipe: 'Holo Fire Lizard + Ruby Whelp'
     },
     {
@@ -1539,7 +1539,12 @@ export const items = [
     },
     {
         display_name: 'The Fool',
-        description: 'On reveal: Cards are revealed 25% faster. If this is the first card in the chain, gain 1 Empower',
+        description: 'On reveal: Cards are revealed 35% faster. If this is the first card in the chain, gain 1 Empower',
         cost: 5
+    },
+    {
+        display_name: 'Heart of Darkness',
+        description: "Every 4s: Steal 2 buffs, prioritizing Regeneration. Triggers 20% faster for each star Dark item. Use 7 Regeneration: Gain 80 maximum health, 5 Empower, and your opponent's healing is reduced by 40% (once)",
+        recipe: 'Corrupted Cystal + Heart Container'
     },
 ]
