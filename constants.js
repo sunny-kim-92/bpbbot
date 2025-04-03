@@ -1623,5 +1623,492 @@ export const items = [
         display_name: 'Stone Helm',
         description: 'Start of battle: Reduce damage taken by 25% for 5s and gain 35 Block. 25% chance to resist critical hits. 30% chance to resist stuns.',
         recipe: 'Cap of Resilience + Stone Skin Potion'
-    }
+    },
+    {
+        display_name: 'Shortbow',
+        damage: '2-3 (1.5/s)',
+        accuracy: '85%',
+        cooldown: '1.7s',
+        cost: 4
+    },
+    {
+        display_name: 'Rat',
+        description: 'Every 3.3s: Deal 5 Effect damage. 75% chance to inflict 1 Poison. 10% chance to inflict 1 Blind. Triggers 155 faster for each star Pet or Food.',
+        cost: 4
+    },
+    {
+        display_name: 'Flame',
+        description: 'Start of Battle: Gain 1 Heat.',
+        cost: 1
+    }, {
+        display_name: 'Squirrel',
+        description: 'Every 4s: Steal a random buff. Triggers 15% faster for each Star Pet or Food.',
+        cost: 5
+    }, {
+        display_name: 'Draconic Orb',
+        description: '15 Heat reached: Your next 3 hits are critical. Every 3.8s: Remove 1 Spikes from your opponent and gain 1 Heat per removed Spikes.',
+        cost: 8
+    }, {
+        display_name: 'Tusk Poker',
+        damage: '2-3 (1.5/s)',
+        stamina: '0.7 (0.4/s)',
+        accuracy: '85%',
+        cooldown: '1.7s',
+        description: 'On hit: 50% chance to gain 1 Spikes.',
+        recipe: 'Shortbow + Tusk'
+    }, {
+        display_name: 'Reverse!',
+        description: 'On reveal: Reflect 3 debuffs. If there are no duplicate cards before, steal 3 buffs.',
+        cost: 3
+    }, {
+        display_name: 'Axe',
+        damage: '3-6 (2.3/s)',
+        stamina: '1.4 (0.7/s)',
+        accuracy: '85%',
+        cooldown: '2s',
+        description: 'On hit: Gain 1 damage',
+        cost: 6
+    }, {
+        display_name: 'Chili Pepper',
+        description: 'Every 4.8s: Gain 1 Heat and heal 5. If you have at least 10 Heat, cleanse 1 debuff.',
+        cost: 5
+    }, {
+        display_name: 'Spell Scroll: Frostbolt',
+        description: 'Every 3s: Deal 5 Effect-damage and inflict 4 Cold for 3s. Max uses: 3 + 1 for each Star Cold-item (except Spell scrolls)',
+        cost: 4
+    }, {
+        display_name: 'Book of Ice',
+        description: 'Every 3.2s: Use 2 Mana to inflict 3 Cold. 10% chance to cast the star Spell scroll for free.',
+        cost: 10
+    }, {
+        display_name: 'Frozen Buckler',
+        description: 'On attacked (melee weapon): 30% chance to prevent 12 damage, remove 0.7 stamina from opponent and inflict 1 Cold (up to 10).',
+        cost: 8,
+        recipe: 'Wooden Buckler + Snowball'
+    }, {
+        display_name: 'Ice Armor',
+        description: 'Start of battle: Gain 80 Block and inflict 4 Cold. Every 5s: Use 1 Heat to inflict 2 Cold and gain 10 Block.',
+        cost: 11,
+        recipe: 'Leather Armor + Snowball'
+    }, {
+        display_name: 'Hedgehog',
+        description: 'Every 5s: Deal 10 Effect-damage + 0.5 for each Spikes. Health drops below 70%: Gain 2 Spikes and 25 Block (once). Triggers 15% faster for each Star Pet or Food.',
+        cost: 7
+    }, 
+    {
+        display_name: 'Fortuna\'s Hope',
+        damage: '2-3 (1.5/s)',
+        stamina: '0.7 (0.4/s)',
+        accuracy: '100%',
+        cooldown: '1.7s',
+        description: 'On hit: 75% chance to gain 1 Luck.',
+        cost: 8,
+        recipe: 'Shortbow + Lucky Clover + Lucky Clover'
+    }, {
+        display_name: 'Miss Fortune',
+        description: 'Every 2.1s: Use 1 Luck to gain 3 buffs of the tupe of which you have the most.',
+        cost: 7
+    }, {
+        display_name: 'Dragon Claws',
+        description: '10% chance to resist Poison. During Battle Rage: Star items trigger 40% faster.',
+        cost: 4,
+        recipe: 'Gloves of Haste + Forging Hammer / Gloves of Haste + Utility Pouch'
+    }, {
+        display_name: 'Dragonskin Boots',
+        description: '20% chance to resist Cold. Battle Rage entered: Cleanse 3 debuffs, gain 1 Empower and 20 Block.',
+        cost: 6,
+        recipe: 'Leather Boots + Forging Hammer / Leather Boots + Utility Pouch'
+    }, 
+    {
+        display_name: 'Dragonscale Armor',
+        description: 'Battle Rage entered: Gain 40 Block. During Battle Rage: Damage taken reduced by 10%.',
+        cost: 7,
+        recipe: 'Leather Armor + Forging Hammer / Leather Armor + Utility Pouch'
+    }, {
+        display_name: 'Chili Goobert',
+        description: '6 star item activations: Heal for 12 and gain 2 Heat.',
+        cost: 11,
+        recipe: 'Goobert + Chili Pepper'
+    }, {
+        display_name: 'Belladonna\'s Shade',
+        damage: '2-11 (3.8/s)',
+        stamina: '0.7 (0.4/s)',
+        accuracy: '85%',
+        cooldown: '1.7s',
+        description: 'On hit: 70% chance to inflict 2 Poison and a random debuff.',
+        cost: 11,
+        recipe: 'Shortbow + Pestilence Flask'
+    }, {
+        display_name: 'Strong Mana Potion',
+        description: 'Mana used or health drops below 50%: Consume this and gain 9 Mana and 25 maximum health.',
+        cost: 7,
+        recipe: 'Mana Potion + Cauldron'
+    }, {
+        display_name: 'Spiked Collar',
+        description: 'Battle Rage lasts 2s longer. Battle Rage entered: Gain 1 Spikes.',
+        cost: 6
+    }, {
+        display_name: 'Stone Armor',
+        description: 'Items use +20% stamina. Start of battle: Gain 110 Block. Every 4s: Remove 1 Spikes and 2 Empower from opponent. Health drops below 50%: Gain Block equal to 40% of your missing health (once).',
+        cost: 13,
+        recipe: 'Stoneskin Potion + Leather Armor'
+    }, {
+        display_name: 'Molten Dagger',
+        min_damage: 3,
+        max_damage: 7,
+        stamina: 0,
+        accuracy: 95,
+        cooldown: 3.5,
+        description: 'On hit: Use 1 Heat to gain 2 damage. On stun: Triggers extra attack.',
+        cost: 6,
+        recipe: 'Dagger + Flame + Flame'
+    }, {
+        display_name: 'Double Axe',
+        min_damage: 6,
+        max_damage: 12,
+        stamina: 2,
+        accuracy: 85,
+        cooldown: 1.8,
+        description: 'On hit: Gain 2 damage. Battle rage entered: Trigger extra attack. Damage gain increased to 3.',
+        cost: 12,
+        recipe: 'Axe + Axe'
+    }, {
+        display_name: 'Molten Spear',
+        min_damage: 3,
+        max_damage: 8,
+        stamina: 1,
+        accuracy: 65,
+        cooldown: 1.5,
+        description: 'Before miss: Use 1 Heat to hit instead and deal +5 damage. On hit: Destroy 5 Block for each star Fire item.',
+        cost: 8,
+        recipe: 'Spear + Flame + Flame'
+    },{
+        display_name: 'Burning Swort',
+        min_damage: 2,
+        max_damage: 4,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.6,
+        description: 'On hit: 60% chance to gain 1 Heat. 7 Heat gained: This and star Weapons gain +1 damage.',
+        cost: 9,
+        recipe: 'Hero Sword + Flame + Flame'
+    },{
+        display_name: 'Vampiric Potion',
+        description: 'Both characters drop bwlow 50% health: Consume this and gain 3 Vampirism and deal 15 Effect-damage with 100% lifesteal.',
+        cost: 8,
+        recipe: 'Strong Health Potion + Blood Gem'
+    }, {
+        display_name: 'Gloves of Power',
+        description: 'Start of battle: Star Weapons deal +20% damage but attack 10% slower. Star Weapon hits: Gain 7 Block.',
+        cost: 10,
+        recipe: 'Gloves of Haste + Stoneskin Potion'
+    }, {
+        display_name: 'Frostbite',
+        min_damage: 4,
+        max_damage: 7,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.7,
+        description: 'On hit: 45% chance to inflict 1 Cold. Opponent reaches 30 Cold: Gain 5 Vampirism (once). Deals +1 damage per Vampirism and +0.4 per Cold of your opponent.',
+        cost: 11,
+        recipe: 'Hungry Blade + Snowball'
+    },{
+        display_name: 'Mrs. Struggles',
+        description: 'Every 4s: Remove 1 buff of each type from your opponent. Triggers 10% faster for each star Dark-item.',
+        cost: 7
+    }, {
+        display_name: 'Badger Rune',
+        description: 'Weapon sockets: On hit: Attack 3% faster. Armor & other sockets: During Battle Rage: Reduce Melee/Ranged damage taken by 7. Backpack: Items use -10% stamina.',
+        cost: 4
+    }, {
+        display_name: 'Elephant Rune',
+        description: 'Weapon sockets: On hit: 25% chance to stun for 0.5s (cooldown 3s). Armor & other sockets: 40% chance to resist debuffs for 4s. Backpack: Gain 40 maximum health.',
+        cost: 4
+    }, {
+        display_name: 'Cheese',
+        description: 'Every 3.8s: Gain 10 maximum health and a random buff.',
+        cost: 8
+    }, {
+        display_name: 'Courage Puppy',
+        min_damage: 5,
+        max_damage: 7,
+        stamina: 0,
+        accuracy: 95,
+        cooldown: 3.5,
+        description: 'Deals +2 damage for each Star Pet.',
+        cost: 7,
+    },{
+        display_name: 'Power Puppy',
+        description: 'Every 3.2s: Randomly gain 1 Luck or 1 Regeneration or 1 Empower. Triggers 10% faster for each star Pet.',
+        cost: 7
+    }, {
+        display_name: 'Hawk Rune',
+        description: 'Weapon sockets: Critical hit chance +12%. Critical damage +15%. Armor & other sockets: 25% chance to resist Blind. Backpack: Every 2.8s: Inflict 1 Blind.',
+        cost: 4
+    }, {
+        display_name: 'Chain Whip',
+        min_damage: 4,
+        max_damage: 9,
+        stamina: 2.1,
+        accuracy: 85,
+        cooldown: 2.4,
+        description: 'During Battle Rage additionally heal for 8. Deals +1 damage for each buff you removed from your opponent. On hit: Remove 2 random buffs from your opponent.',
+        cost: 8,
+        recipe: 'Vine Whip + Forging Hammer / Vine Whip + Utility Pouch'
+    },{
+        display_name: 'Brass Knuckles',
+        min_damage: 3,
+        max_damage: 5,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.5,
+        description: 'On hit: 50% chance to stun for 0.3s, this and star Items gain 5% accuracy and 5% critical hit chance. During Battle Rage: Trigger 50% faster.',
+        cost: 10,
+    },{
+        display_name: 'Burning Blade',
+        min_damage: 10,
+        max_damage: 12,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.6,
+        description: 'On hit: Gain 1 Heat. 6 Heat gained: This and star Weapons gain 1 damage.',
+        cost: 17,
+        recipe: 'Hero Longsword + Flame + Flame / Burning Sword + Whetstone + Whetstone'
+    },{
+        display_name: 'Divine Potion',
+        description: 'You reached 10 debuffs: Consume this and cleanse 10 debuffs.',
+        cost: 7
+    }, {
+        display_name: 'Strong Vampiric Potion',
+        description: 'Both characters drop below 80% health: Consume this and gain 5 Vampirism and 35% lifesteal for 6s.',
+        cost: 12,
+        recipe: 'Vampiric Potion + Cauldron'
+    }, {
+        display_name: 'Wisdom Puppy',
+        description: 'Every 4s: Gain 10 Block and cleanse 1 Cold. Triggers 15% faster for each Star Pet.',
+        cost: 7,
+    }, {
+        display_name: 'Wolf Emblem',
+        description: 'Wolf companions are offered in the shop. Star Weapons have 10% critical hit chance (+12% for each Diamond Pet). Every 3s: If you have at least 10 Block, gain 1 Empower. Otherwise, gain 10 Block.',
+        cost: 10
+    }, {
+        display_name: 'Emerald Egg',
+        description: 'Start of battle: Gain 3 Luck. Hatches after 2 rounds in your backpack.',
+        cost: 10
+    }, {
+        display_name: 'Sapphire Egg',
+        description: 'Start of battle: Gain 4 Mana. Hatches after 2 rounds in your backpack.',
+        cost: 10
+    }, {
+        display_name: 'Amethyst Egg',
+        description: 'Start of battle: Inflict 4 random debuffs. Hatches after 2 rounds in your backpack.',
+        cost: 10
+    }, {
+        display_name: 'Flame Whip',
+        min_damage: 6,
+        max_damage: 10,
+        stamina: 1.5,
+        accuracy: 90,
+        cooldown: 1.7,
+        description: 'On hit: Use 1 Spikes to gain 4 Heat and deal +8 damage.',
+        cost: 10,
+        recipe: 'Vine Whip + Flame + Flame'
+    },{
+        display_name: 'Staff of Fire',
+        min_damage: 10,
+        max_damage: 12,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.8,
+        description: 'On attack: Use 2 Mana and 2 Heat to gain 6 damage.',
+        cost: 18,
+        recipe: 'Magic Staff + Draconic Orb'
+    },{
+        display_name: 'Phoenix',
+        min_damage: 15,
+        max_damage: 20,
+        stamina: 0,
+        accuracy: 85,
+        cooldown: 2.5,
+        description: 'On attack: Lose 11 health. Before defeat: Use all your heat to reincarnate with 6 health per Heat (once).',
+        cost: 11,
+    },{
+        display_name: 'Moon Armor',
+        description: 'Start of battle: Gain 50 Block + 20 Block for each Star Mana-item. Every 2.6s: Gain 3 Mana and reflect 2 debuffs.',
+        cost: 19,
+        recipe: 'Holy Armor + Mana Orb'
+    }, {
+        display_name: 'Strong Divine Potion',
+        description: 'You reached 10 debuffs: Consume this and clenase 10 debuffs and gain 8 random buffs.',
+        cost: 15,
+        recipe: 'Divine Potion + Cauldron'
+    }, {
+        display_name: 'Busted Blade',
+        min_damage: 30,
+        max_damage: 50,
+        stamina: 5,
+        accuracy: 95,
+        cooldown: 5,
+        description: 'During Battle Rsage: Debcrease stamina usage to 3 and cooldown to 3s. Deals +5 damage per Empower.',
+        cost: 14,
+        recipe: 'Impractically Large Greatsword + Forging Hammer / Impractically Large Greatsword + Utility Pouch'
+    },{
+        display_name: 'Cheese Goobert',
+        description: '5 Star item activations: Gain 20 maximum health and 2 random buffs.',
+        cost: 14,
+        recipe: 'Goobert + Cheese'
+    }, {
+        display_name: 'Rainbow Goobert Deathslushy Mansquisher',
+        description: '9 Star item activations: Gain 20 maximum health, 20 Block, 2 Vampirism and 2 random buffs, inflict 3 Blind, and Star Weapons gain 4 damage.',
+        cost: 57,
+        recipe: 'Cheese Goobert + Light Goobert + Steel Goobert + Blood Goobert'
+    }, {
+        display_name: 'Armored Courage Puppy',
+        min_damage: 7,
+        max_damage: 9,
+        stamina: 0,
+        accuracy: 95,
+        cooldown: 3.5,
+        description: 'Cannot be blocked by shields or trigger Spikes. Deals +2 damage for each Star Pet.',
+        cost: 7,
+        recipe: 'Courage Puppy + Forging Hammer / Courage Puppy + Utility Pouch'
+    },{
+        display_name: 'Armored Wisdom Puppy',
+        description: 'Every 4s: Gain 14 Block and cleanse 1 Cold. Increase Block gain by 1. Triggers 15% faster for each Star Pet.',
+        cost: 7,
+        recipe: 'Wisdom Puppy + Forging Hammer / Wisdom Puppy + Utility Pouch'
+    }, {
+        display_name: 'Armored Power Puppy',
+        description: 'Every 2.8s: Randomly gain 1 Luck or 1 Regeneration or 1 Empower. Triggers 10% faster for each Star Pet. Triggers 20% faster for each Star Food.',
+        cost: 7,
+        recipe: 'Power Puppy + Forging Hammer / Power Puppy + Utility Pouch'
+    }, {
+        display_name: 'Emerald Whelp',
+        min_damage: 5,
+        max_damage: 10,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.1,
+        description: 'Start of battle: Gain 3 Luck. On hit: Inflict 3 Poison.',
+        cost: 14,
+    },{
+        display_name: 'Sapphire Whelp',
+        min_damage: 5,
+        max_damage: 10,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.1,
+        description: 'Start of battle: Gain 4 Mana. On hit: Use 1 Mana to Gain 5 Block and a random other buff.',
+        cost: 14,
+    },{
+        display_name: 'Amethyst Whelp',
+        min_damage: 5,
+        max_damage: 10,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.1,
+        description: 'Start of battle: Inflict 4 random debuffs. On hit: Remove a random buff from your opponent.',
+        cost: 14,
+    },{
+        display_name: 'Obsidian Dragon',
+        min_damage: 11,
+        max_damage: 16,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.1,
+        description: '10 Heat gained: Gain 2 damage and the next hit of the Star Weapon is critical.',
+        cost: 18,
+        recipe: 'Ruby Whelp + Draconic Orb'
+    },{
+        display_name: 'Sun Shield',
+        description: 'Star items gained 12 Block: Deal 4 Effect-damage. On attacked (melee/ranged): 30% chance to prevent 15 damage and remove 0.7 stamina from your opponent.',
+        cost: 14,
+        recipe: 'Shield of Valor + Flame + Flame'
+    }, {
+        display_name: 'Sun Armor',
+        description: 'Star Fire-items gain Holy. Start of battle: Gain 70 Block. Gain 1 Heat for each Star Holy-item. Every 3s: Use 1 Heat to heal for 12 and cleanse 2 debuffs.',
+        cost: 15,
+        recipe: 'Holy Armor + Flame + Flame'
+    }, {
+        display_name: 'Rainbow Goobert Epicglob Uberviscous',
+        description: '6 Star item activations: Heal for 14, gain 20 Block, 2 Vampirism and 4 Heat, inflict 3 Blind, and Star Weapons gain 4 damage.',
+        cost: 54,
+        recipe: 'Chili Goobert + Light Goobert + Steel Goobert + Blood Goobert'
+    }, {
+        display_name: 'Ice Dragon',
+        min_damage: 15,
+        max_damage: 20,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.1,
+        description: 'On hit: Inflict 1 Cold. Opponent reaches 10 Cold: Gain 60 Block. You take -20% Effect-damage.',
+        cost: 14,
+        recipe: 'Ruby Whelp + White-Eyes Blue Dragon'
+    },{
+        display_name: 'Big Bowl of Treats',
+        description: 'Every 3.7s: Gain 2 random buffs and make Star Food trigger 25% faster (up to 100%). All your Pets have a 20% chance to activate twice. Friends of the forest are offered in the shop.',
+        cost: 10
+    }, {
+        display_name: 'Mega Clover',
+        description: 'Sale chance +5%. Chance to find Unique-items +20%. Shop entered: Generate two Lucky Clovers. 15 Luck reached: Gain 25 random other buffs.',
+        cost: 10
+    }, {
+        display_name: 'Snake',
+        description: '4% chance for each Luck to protect Poison on your opponent from being cleansed. Start of battle: Gain 4 Luck and 50 maximum health for each Star Pet. Every 2.3s: Inflict 2 Poison.',
+        cost: 10
+    }, {
+        display_name: 'Cauldron',
+        description: 'Shop enetered: Upgrade an adjacent Potion. Every 3.5s: Heal for 20 or gain 6 Mana or gain 5 Heat. Triggers 15% faster for each Star Food or Potion.',
+        cost: 10
+    }, {
+        display_name: 'Forging Hammer',
+        min_damage: 2,
+        max_damage: 5,
+        stamina: 0,
+        accuracy: 95,
+        cooldown: 3.5,
+        description: 'Deals additional +1 damage per Empower.',
+        cost: 3
+    }, {
+        display_name: 'Anvil',
+        description: 'Item crafted: Generate a Flame. For each Star crafted item, the Diamond Weapons deal +1 damage and use -5% stamina.',
+        cost: 10
+    }, {
+        display_name: 'Deerwood Gaurdian',
+        description: 'Damage taken reduced by 10%. Battle Rage lasts 0.8s longer for each Star Nature-item. Every 1s during Battle Rage: Heal for 13 and gain 3 Mana.',
+        cost: 10
+    }, {
+        display_name: 'Shaman Mask',
+        description: 'Runes are offered in the shop. Start of battle: Gain 1 Luck for each socketed Gemstone. Every 3.4s: Use 2 Luck to gain 5 random buffs.',
+        cost: 10,
+    }, {
+        display_name: 'Friendly Fire',
+        description: 'Every 2.8s: Use 1 Mana to gain 2 Heat. Triggers 10% faster for each Star Fire-item. 20 Heat reached: Gain 5 Luck. 40 Heat reached: Gain 15 Regeneration. 60 Heat reached: Deal 100 Effect-damage.',
+        cost: 10
+    }, {
+        display_name: 'Burning Banner',
+        description: '25% chance to protect your buffs from removal and your opponent\'s debuffs from cleansing. Star Holy-item activates: 50% chance to inflict 1 Blind for 5s. Every 3.8s: Remove 2 buffs from your opponent and gain 2 Regeneration.',
+        cost: 10
+    }, {
+        display_name: 'Dark Lantern',
+        description: 'Start of battle: Lose 50% health. Before defeat: Reincarnate with 50% health and befome invulnerable for 1.5s (once). On reincarnation: Deal 5 Effect-damage for each Star Fire-item and inflict 7 debuffs for each Diamond Dark-item.',
+        cost: 10,
+    }, {
+        display_name: 'Frozen Flame',
+        description: 'Start of battle: Gain 30 Block for each Star Ice-item. 6 Heat gained: Inflict 2 COld. For each Cold of your opponent, the Diamond item has +1.5% critical hit chance and +2% critical damage. Additional Ice-items are offered in the shop.',
+        cost: 10
+    }, {
+        display_name: 'Dragon Nest',
+        description: 'Start of battle: Gain 2 Luck, 2 Regeneration, 4 Mana, and 2 Heat. Star Dragon attacks: Heal for 5. Star Gradon eggs hatch after 1 round. Additional dragon eggs are offered in the shop.',
+        cost: 10
+    }, {
+        display_name: 'Duffle Bag',
+        description: 'Add 6 backpack slots. Health drops below 50%: Enter Battle Rage for 5s (once). During Battle Rage: Items inside trigger 30% faster. You take 22% reduced damage.',
+        cost: 16
+    }, {
+        display_name: 'Fire Pit',
+        description: 'Add 9 backpack slots. Shop entered: Spend 1 Gold to generate a Flame. Start of battle: Gain 5 maximum health for each Fire-item inside.',
+        cost: 20
+    }, 
+    
 ]
