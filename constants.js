@@ -1854,7 +1854,7 @@ export const items = [
         cooldown: 2.4,
         description: 'During Battle Rage additionally heal for 8. Deals +1 damage for each buff you removed from your opponent. On hit: Remove 2 random buffs from your opponent.',
         cost: 8,
-        recipe: 'Vine Whip + Forging Hammer / Vine Whip + Utility Pouch'
+        recipe: 'Thorn Whip + Forging Hammer / Thorn Whip + Utility Pouch'
     },{
         display_name: 'Brass Knuckles',
         min_damage: 3,
@@ -1912,7 +1912,7 @@ export const items = [
         cooldown: 1.7,
         description: 'On hit: Use 1 Spikes to gain 4 Heat and deal +8 damage.',
         cost: 10,
-        recipe: 'Vine Whip + Flame + Flame'
+        recipe: 'Thorn Whip + Flame + Flame'
     },{
         display_name: 'Staff of Fire',
         min_damage: 10,
@@ -2110,5 +2110,492 @@ export const items = [
         description: 'Add 9 backpack slots. Shop entered: Spend 1 Gold to generate a Flame. Start of battle: Gain 5 maximum health for each Fire-item inside.',
         cost: 20
     }, 
-    
+    {
+        display_name: 'Serpent Staff',
+        min_damage: 8,
+        max_damage: 10,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.8,
+        description: 'On attack: Use 4 Mana to gain 2 damage and inflict 1 Poison for each 4 damage dealt. You have 30% chance to duplicate Poison you inflict.',
+        cost: 17,
+        recipe: 'Mana Staff + Pestilence Flask'
+    },
+    {
+        display_name: 'Spiked Staff',
+        min_damage: 10,
+        max_damage: 12,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.8,
+        description: 'On attack: Use 3 Mana to gain 2 Empower, and during Battle Rage also gain 2 Spikes.',
+        cost: 16,
+        recipe: 'Mana Staff + Spiked Collar'
+    },
+    {
+        display_name: 'Thornbloom',
+        min_damage: 7,
+        max_damage: 12,
+        stamina: 2.1,
+        accuracy: 80,
+        cooldown: 2.1,
+        description: 'On hit: Gain 1 Spikes. 60% chance to gain 1 Empower. Empower gained: Gain 11 maximum health. Deals +1 damage per Spikes.',
+        cost: 14,
+        recipe: 'Thorn Whip + Heroic Potion'
+    },
+    {
+        display_name: 'King Crown',
+        description: 'Every 2.4s: Heal for 8 and protect 1 buff from removal. Use 10 Mana: Become invulnerable for 2.5s (once). Effects of Gemstones socketed in this are increased by 50%',
+        cost: 17,
+        recipe: 'Glowing Crown + Box of Riches'
+    }, {
+        display_name: 'King GOobert',
+        description: '6 Star item activations: Heal for 35, protect 3 buffs from removal and use 4 Mana to become invulnerable for 1.5s (up to 3 times). Effects of Gemstones socketed in this are increased by 50%.',
+        cost: 23,
+        recipe: 'Goobert + King Crown'
+    }, {
+        display_name: 'Leaf Badge',
+        description: 'Ranger items are offered in the shop. Star items gain 2% critical hit chance for each Luck. Every 2.2s: Gain 1 Luck.',
+        cost: 5
+    }, {
+        display_name: 'Skull Badge',
+        description: 'Reaper items are offered in the shop. Every 1.5s: Inflict a random debuff.',
+        cost: 5
+    }, {
+        display_name: 'Wolf Badge',
+        description: 'Berserker items are offered in the shop. Health drops below 50%: Enter Battle Rage for 5s (once). During Battle Rage: Star items trigger 25% faster. You take 18% reduced damage.',
+        cost: 5
+    }, {
+        display_name: 'Flame Badge',
+        description: 'Pyromancer items are offered in the shop. Shop entered: 65% chance to spend 1 Gold to generate a Flame. Start of battle: Gain 6 Heat.',
+        cost: 5
+    }, {
+        display_name: 'Rainbow Badge',
+        description: 'Items of all classes are offered in the shop. After 7s: Gain 1 of every type of buff.',
+        cost: 5
+    }, {
+        display_name: 'Stone Badge',
+        description: 'Your starting class items are no longer offered in the shop (even when this item is in storage). Shop entered: Generate items worth 1 Gold. Every 3s: Gain 4 Block.',
+        cost: 5
+    }, {
+        display_name: 'Jimbo',
+        description: 'On reveal: Gain 6 random buffs. For each pair before: Resist 1 critical hit. For each three of a kind before: Your Weapons use -25% stamina. For each four of a kind before: Activate 2 random revealed cards (except Jimbos).',
+        cost: 5
+    }, {
+        display_name: 'Shiny Shell',
+        description: 'After 5s: Heal for 5 + 3 for each Star Holy-item.',
+        cost: 2
+    }, {
+        display_name: 'Unidentified Amulet',
+        description: 'On buy: Gain a random effect.',
+        cost: 6
+    }, {
+        display_name: 'Amulet of Life',
+        description: 'Start of battle: Gain 20 maximum health. Your healing is increased by 20%.',
+        cost: 6
+    }, {
+        display_name: 'Amulet of Steel',
+        description: 'Start of battle: Gain 30 Block. Star items gained 40 Block: Gain 1 Empower.',
+        cost: 6
+    }, {
+        display_name: 'Amulet of Feasting',
+        description: 'Star Food triggers 40% faster. Food bought: Restock with a random Food.',
+        cost: 6
+    }, {
+        display_name: 'Amulet of Energy',
+        description: 'Start of battle: The Star item triggers 100% faster for 1s. Buff used: Refund 25% of the used buffs.',
+        cost: 6
+    }, {
+        display_name: 'Amulet of the Wild',
+        description: 'After 5s: Trigger the Star Pet and gain 4 Spikes. Return damage limit of Spikes against Melee and Ranged attacks +50%.',
+        cost: 6
+    }, {
+        display_name: 'Amulet of Alchemy',
+        description: 'Start of battle: Gain 3 random buffs. Star Potion consumed: 70% chance to repeat its effect after 2.5s.',
+        cost: 6
+    }, {
+        display_name: 'Shell Totem',
+        stamina: 2,
+        description: 'Every 3.6s: If your health is above 70%, gain 1 Empower. Otherwise, heal for 8. Uses -15% stamina for each Star Holy-item.',
+        cost: 5,
+        recipe: 'Wooden Sword + Shiny Shell'
+    }, {
+        display_name: 'Oil Lamp',
+        description: 'Start of battle: Gain 2 Heat. Every 3.4s: The Star Weapon gains 1 damage and 5% accuracy.',
+        cost: 7
+    }, {
+        display_name: 'Toad',
+        description: 'Star items gained 10 buffs: Heal for 12. Star items used 10 buffs: Gain 1 Luck and 1 Mana. Every 3.8: Gain 1 Luck and 1 Mana.',
+        cost: 6
+    }, {
+        display_name: 'Box of Prosperity',
+        description: 'Add 4 backpack slots. SHop entered: If this has at least 2 Godly or Unique items inside, generate a chipped Gemstone.',
+        cost: 5,
+        recipe: 'Box of Riches + Maneki-Neko'
+    }, {
+        display_name: 'Maneki-neko',
+        description: 'Sale chance +3%. Value of Star items > 20 Gold: 15% chance to resist critical hits. Value of Star items > 40 Gold: Godly and Unique items trigger 15% faster.',
+        cost: 10
+    }, {
+        display_name: 'Prismatic Orb',
+        description: 'Start of battle: For each...Star Mana-item: Gain 2 Mana. Star Vampiric-item: Gain 1 Vampirism. Star Holy-item: Increase your healing by 4%. Star Dark-item: Inflict a random debuff. Every 8s: Gain 1 of every type of buff.',
+        cost: 14
+    },  {
+        display_name: 'Prismatic Sword',
+        min_damage: 10,
+        max_damage: 16,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.4,
+        description: 'For each...Star Mana=item: +8% attack speed. Star Vampiric-item: +15% lifesteal. Star Holy-item: Gain +0.3 damage on hit. Star Dark-item: +10% chance to inflict 4 random debuffs on hit.',
+        cost: 17,
+        recipe: 'Wooden Sword + Prismatic Orb'
+    }, {
+        display_name: 'Stone Golem',
+        min_damage: 8,
+        max_damage: 13,
+        stamina: 0,
+        accuracy: 85,
+        cooldown: 5.5,
+        description: 'On hit: Gain 1 Empower. 30% chance to stun for 0.5s. Use 7 Regeneration: Reduce cooldown to 2.6s and gain 150 Block (once). Deals +10 damage for each Star Bag of Stones.',
+        cost: 3
+    },{
+        display_name: 'Rat Chef',
+        description: 'Start of battle: Gain 1 Regeneration for each Star Food. Every 7s: Regenerate 2 stamina and gain 1 Empower. Triggers 15% faster for each Star Pet or Food.',
+        cost: 
+    }, {
+        display_name: 'Squirrel Archer',
+        min_damage: 2,
+        max_damage: 3,
+        stamina: 0,
+        accuracy: 85,
+        cooldown: 3.2,
+        description: 'On hit: Steal a random buff. Triggers 15% faster for each Star Pet or Food.',
+        cost: 9,
+        recipe: 'Squirrel + Shortbow'
+    },{
+        display_name: 'Goobling',
+        description: '3 Star item activations: Heal for 4.',
+        cost: 2
+    }, {
+        display_name: 'Doom Cap',
+        description: 'Every 2.9: Inflict 3 Poison and reduce opponent\'s healing by 10%.',
+        cost: 10,
+        recipe: 'Fly Agaric + Demonic Flask'
+    }, {
+        display_name: 'Spicy Banana',
+        description: 'Star Banana activates: 40% chance to gain 1 Heat. 1 stamina used: Heal for 3.',
+        cost: 5
+    }, {
+        display_name: 'Smelly Wall',
+        description: 'Star Garlic gains +5 Block. 18 Block gained: Inflict 1 Poison.',
+        cost: 5
+    }, {
+        display_name: 'Piggy Pinata',
+        description: 'Destroying a Piggybank generates items instead. Shop entered: Piggybanks have a 30% chance to explode. Star items gain 5% critical hit chance.',
+        cost: 5
+    }, {
+        display_name: 'Investment Opportunity',
+        description: 'Shop entered: Gain 1 Gold. Star item used buff: Gain 4 maximum health.',
+        cost: 5
+    }, {
+        display_name: 'Superspacious',
+        description: 'Bags appear more often in the shop and have +30% chance to be on sale. Star items trigger 7% faster for each free Diamond slot.',
+        cost: 5
+    }, {
+        display_name: 'It\'s Slime Time!',
+        description: 'Gooblings are offered in the shop. On buy: Generate a Goobling. Every 1.9s: Advance all Gooberts and GOoblings by 1 activation.',
+        cost: 5
+    }, {
+        display_name: 'Smithing For Dummies',
+        description: 'On buy: Generate a Whetstone. Start of battle: Star Crafted Weapons gain 1 damage and use -22% stamina.',
+        cost: 5
+    }, {
+        display_name: 'Markswoman',
+        description: 'Star Ranged-Weapons deal +20% damage, attack +25% faster and have +15% accuracy.',
+        cost: 5
+    }, {
+        display_name: 'Mushroom Farm',
+        description: 'SHop entered: If you have at least 2 Mushrooms, generate a Fly Agaric. Start of battle: Star Mushrooms trigger 50% faster.',
+        cost: 5
+    }, {
+        display_name: 'Extra Angy',
+        description: 'Battle Rage ended: After 4s, enter Battle Rage for 60% of the duration (once).',
+        cost: 5
+    }, {
+        display_name: 'Everburning',
+        description: 'Burning Sword and Burning Blade use -60% stamina. After 7s: Gain 1 Heat for each Flame.',
+        cost: 5
+    }, {
+        display_name: 'Shielded',
+        description: 'Star Shields have +30% chance to block. Star Armors trigger 60% faster.',
+        cost: 5
+    }, {
+        display_name: 'Stoned',
+        description: 'Stone or Stone GOlem dealt damage: Gain 65% of the damage as Block. While you have Block: You take -15% damage.',
+        cost: 5
+    }, {
+        display_name: 'Mana Master',
+        description: 'Mana Orbs gain +20 random buffs. Every 4.7s: Gain 3 Mana. Triggers 20% faster for each Star Mana-item.',
+        cost: 5
+    }, {
+        display_name: 'Power of the Moon',
+        description: 'Fatigue starts 5s earlier. Star Moon Armor activates: Inflict 1 Blind. Star Moon SHield activates: Reflect 1 debuff. Fatigue starts: Increase your maximum health by 65%.',
+        cost: 5
+    }, {
+        display_name: 'Hardwood',
+        description: 'Star Common Melee-Weapons deal +150% damage. Start of battle: Gain 20 Block for each Star Common item.',
+        cost: 5
+    }, {
+        display_name: 'Acorn Ace',
+        description: 'Acorn Collars have more Star slots. Items affected by Acorn Collar use -12% stamina. Critwood Staffs use -75% stamina.',
+        cost: 5
+    }, {
+        display_name: 'Dark Ritual',
+        description: 'After 17s: Inflict 20 debuffs, gain 10 Vampirism. Triggers 20% faster for each Star Dark-item.',
+        cost: 5
+    }, {
+        display_name: 'Dragon Set',
+        description: 'Every 1.2s during Battle Rage: Gain 1 Heat. If you have Dragonscale Armor, Dragonskin Boots and Dragon Claws: You have +2% lifesteal for each Heat (up to 20%).',
+        cost: 5
+    }, {
+        display_name: 'Solaris',
+        description: '15% chance to duplicate any Heat you gain. Star Sun SHield blocked damage: 60% chance to gain 1 Heat. Star Sun Armor uses Heat: Gain 16 Block.',
+        cost: 5
+    }, {
+        display_name: 'Unstable Recombobulator',
+        description: 'Shop entered: Consume this and Star items. Create different items based on the combined value. Every 4s: Gain 1 random buff and cleanse 1 debuff.',
+        cost: 5
+    }, {
+        display_name: 'Artifact Stone: Death',
+        min_damage: 7,
+        max_damage: 9,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 1.7,
+        description: 'Can only be thrown once per battle. On hit: Inflict Fatigue damage. Star items have +8% critical hit chance per Fatigue level of your opponent.',
+        cost: 8
+    },
+    {
+        display_name: 'Cubert',
+        description: 'Star item activates: 55% chance to gain 1 Regeneration. Diamond item activates: 55% chance to use 1 Regeneration to gain 1 Empower.',
+        cost: 8
+    }, {
+        display_name: 'Unsettling Presence',
+        description: 'Deal 30% of your healing as Effect-damage. Every 3s: Use a random buff to heal for 12.',
+        cost: 10
+    }, {
+        display_name: 'Stable Recombobulator',
+        description: 'Shop entered: Consume Star items. Create different items based on the combined value. Every 2.5s: Gain 1 random buff and cleanse 1 debuff.',
+        cost: 6
+    }, {
+        display_name: 'Star of Courage',
+        description: 'Chance to find Unique-items +5%. Your Weapons use -5% stamina. (Rewarded for starting as a random character.)',
+        cost: 1
+    }, {
+        display_name: 'Time Dilator',
+        description: 'Your and your opponent\'s Weapons attack 30% slower. Every 1s: your item with the highest cooldown triggers 6% faster.',
+        cost: 8
+    }, {
+        display_name: 'Sack of Surprises',
+        description: 'Game started: Replace this with random starting bags and items.',
+        cost: 10
+    }, {
+        display_name: 'Vineweave Basket',
+        description: 'Add 9 backpack slots. Your healing is amplified by 10% + 5% per Nature-item inside. In rounds 1 and 10, sale chance is increased by 20%.',
+        cost: 20
+    }, {
+        display_name: 'Relic Case',
+        description: 'Add 4 backpack slots. Every 3.2s: Weapons inside deal +5% damage and use -5% stamina.',
+        cost: 12
+    }, {
+        display_name: 'Utility Pouch',
+        description: 'Add 8 backpack slots. Weapons insde deal +30% damage but attack 30% slower. After 5s: Enter Battle Rage for 6s. During Battle Rage: +35% lifesteal.',
+        cost: 18
+    }, {
+        display_name: 'Offering Bowl',
+        description: 'Add 4 backpack slots. Start of battle: Gain 1 Empower. Shop entered: Consume all items inside. Create a Flame and different items based on the combined value.',
+        cost: 8
+    }, {
+        display_name: 'Amulet of Darkness',
+        description: '22 Effect-damage dealt: Inflict 1 random debuff. Star item activates: 30% chance to deal 7 Effect-damage.',
+        cost: 6
+    }, {
+        display_name: 'Shepherd\'s Crook',
+        description: 'Start of battle: Star Weapons gain 2 damage. 35% chance to protect your buffs from removal. 50% chance to resist Blind and Cold.',
+        cost: 8,
+        recipe: 'Broom + Whetstone'
+    }, {
+        display_name: 'Wonky Snowman',
+        description: 'On buy: Split into 2 Snowballs.',
+        cost: 8
+    }, {
+        display_name: 'Snowball',
+        description: 'Start of battle: Inflict 2 Cold. Your opponent gains 15% less maximum health from items.',
+        cost: 4
+    }, {
+        display_name: 'Snow Stick',
+        min_damage: 6,
+        max_damage: 9,
+        stamina: 1.2,
+        accuracy: 95,
+        cooldown: 2.1,
+        description: 'On hit: Inflict 3 Cold and 2 Cold to yourself.',
+        cost: 8,
+        recipe: 'Broom + Snowball'
+    },{
+        display_name: 'Stone Shoes',
+        description: 'Health drops below 70%: Gain 1 Luck, 1 Empower, and 45 Block. Reduce Ranged/Effect-damage taken by 35% for 7s (once).',
+        cost: 12,
+        recipe: 'Leather Boots + Stoneskin Potion'
+    }, {
+        display_name: 'Katana',
+        min_damage: 8,
+        max_damage: 10,
+        stamina: 1.4,
+        accuracy: 90,
+        cooldown: 1.7,
+        description: 'On hit: Remove 1 damage gained in battle from all opponent Weapons and gain 1 damage. If your opponent has at least 20 buffs, remove 2 of the type they have the most of.',
+        cost: 14,
+        recipe: 'Ripsaw Blade + Whetstone'
+    },{
+        display_name: 'Just Stats',
+        description: 'Start of battle: Gain 10% maximum health and 10% base stamina regeneration. Always offered in round 4.',
+        cost: 5
+    }, {
+        display_name: 'Uniquely Unique',
+        description: 'The Star item triggers 20% faster + 10% for each Diamond Unique item, Customer Card or Platinum Customer Card. Chance to find Unique-items +50%. You can obtain +2 Unique-items.',
+        cost: 5
+    }, {
+        display_name: 'Heavy Drinking',
+        description: 'Every 10s: Trigger the effect of a random Potion. Triggers 50% faster for each distinct Star Potion.',
+        cost: 5
+    }, {
+        display_name: 'Girl Power',
+        description: 'Every 6.7: Gain 2 Regeneration or 2 Empower, depending on which you have less of. Triggers 20% faster for each distinct Star Class item.',
+        cost: 5
+    }, {
+        display_name: 'Blood Manipulation',
+        description: 'Deal 15% of your healing as Effect-damage. Every 4s: Gain 1 Vampirism. Triggers 15% faster for each Star Vampiric-item.',
+        cost: 5
+    }, {
+        display_name: 'Thornburst',
+        description: 'Every 6.5s: tun for 0.3s and gain 2 Spikes (up to 5 times). Triggers 5% faster fo reach Spikes.',
+        cost: 5
+    }, {
+        display_name: 'Heart of the Cards',
+        description: 'Requires: Deck of Cards. Card revealed: Gain 3 Regeneration. If the card is at position 3 or highers in the chain, also gain 4 Mana.',
+        cost: 5
+    }, {
+        display_name: 'Buy the Holy Light',
+        description: 'Holy-Items have +20% chance to be on sale. Oil Lamps and Djinn Lamps gain Holy. Star Holy-Items trigger 40% faster.',
+        cost: 5
+    }, {
+        display_name: 'Bagtacular',
+        description: 'Fanny Packs give +5% trigger speed. Stamina Sacks give 5% base stamina regeneration. Potion Belts give 2 buffs when a Potion inside is consumed. Protective Purses give +15 Block.',
+        cost: 5
+    }, {
+        display_name: 'More Stats',
+        description: 'Start of battle: Gain 10% maximum health. Your Weapons deal +5% damage. Always offered in round 10.',
+        cost: 5
+    }, {
+        display_name: 'Snowcake',
+        description: 'Every 2.3s: Inflict 1 Cold. If your opponent has at least 10 Cold, increase Effect-damage by 10% and deal 10 Effect-damage.',
+        cost: 6
+    }, {
+        display_name: 'Pop',
+        min_damage: 2,
+        max_damage: 3,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 1.5,
+        description: 'Attacks 4% faster for each Mana (up to 60%).',
+        cost: 3
+    },{
+        display_name: 'Cthulhu',
+        description: 'Every 3.5s: Deal 10 Effect-damage with 100% lifesteal and trigger a random Star Food. Star Food gains Dark. Triggers 15% faster for each Star Dark-item.',
+        cost: 8
+    }, {
+        display_name: 'Sir Sand',
+        description: 'Start of battle: Both players take -25% damage for 7s (unstackable). Inflict 2 Blind to both players.',
+        cost: 5
+    }, {
+        display_name: 'Paradise Birb',
+        description: 'Every 2.7s: Star items gain 7% chance to duplicate buffs they gain, heal 7% more and trigger 7% faster (up to 10 times).',
+        cost: 22,
+        recipe: 'Jynx Torquilla + Prismatic Orb'
+    }, {
+        display_name: 'Double Rainbow',
+        description: 'Star items have 20% chance to duplicate buffs they gain. Every 6s: Gain a random buff. Triggers 15% faster for each Diamond Holy-item.',
+        cost: 5
+    }, {
+        display_name: 'False Life',
+        description: 'Items give +30% maximum health. Overhealed: Gain the overheal as maximum health. Every 6s: Heal for 10 + 4 for each Star Dark-item.',
+        cost: 5
+    }, {
+        display_name: 'Full Body Protection',
+        description: 'Star items give +30% Block. If you have exactly 1 Armor, Helmet and Shoes: Reduce Melee/Ranged/Effect-damage taken by 8. Every 5s: Gain 10 Block.',
+        cost: 5
+    }, {
+        display_name: 'Repeater',
+        description: 'After 12s: Repeat the Start of battle effects of the Star items.',
+        cost: 5
+    }, {
+        display_name: 'Winged Boots',
+        description: 'Health drops below 70%: Gain 1 Empower, cleanse 20 debuffs and dodge the next 3 Melee/Ranged-attacks (once).',
+        cost: 13,
+        recipe: 'Leather Boots + Divine Potion'
+    }, {
+        display_name: 'Echoing Battlecry',
+        description: 'Every 15s: Repeat a random Star Start of battle effect (once per item). Triggers 50% faster for each Star Start of battle item.',
+        cost: 5
+    }, {
+        display_name: 'Enchanted Weapons',
+        description: 'Attack effects of the Star Weapons have a 20% chance to repeat. Every 5.2s: Gain 1 of the buff you have least of.',
+        cost: 5
+    }, {
+        display_name: 'No Rush Please',
+        description: 'Start of battle: Both players take -35% damage for 10s. Inflict 4 Cold.',
+        cost: 5
+    }, {
+        display_name: 'Time Melting',
+        description: 'Start of battle: Gain 5 Heat. Effect durations of Star items are increased by 60%.',
+        cost: 5
+    }, {
+        display_name: 'Happy Bomb',
+        description: 'After 12s: Use all your buffs, your opponent takes +4% damage for each buff used. Deal 30 Effect-damage.',
+        cost: 7
+    }, {
+        display_name: 'Shelly',
+        description: 'Cleanse effects have 25% chance to cleanse an additional debuff. Every 12s: Cleanse 6 debuffs and heal for 40. Triggers 15% faster for each Star Potion.',
+        cost: 6,
+        recipe: 'Shiny Shell + Health Potion'
+    }, {
+        display_name: 'Holdall',
+        description: 'Add 6 backpack slots. Start of battle: Gain 8 Block for each Neutral item inside.',
+        cost: 7,
+        recipe: 'Leather Armor + Goobert'
+    }, {
+        display_name: 'Posion Spear',
+        min_damage: 9,
+        max_damage: 14,
+        stamina: 1,
+        accuracy: 85,
+        cooldown: 1.5,
+        description: 'On hit: Inflict 3 Poison and 2 Posion to yourself. Destroy 6 Block for each Star free slot or Nature-item.',
+        cost: 13,
+        recipe: 'Spear + Pestilence Flask'
+    },{
+        display_name: 'Dig Deeper',
+        description: 'Requires: Shovel. Shovels dig up more valuable items. Start of battle: Inflict 2 Blind.',
+        cost: 5
+    }, {
+        display_name: 'Knife to Meet Your',
+        description: 'Daggers attack 40% faster. After 12s: Your Weapons deal +50% damage. Triggers 30% faster for each Star Dagger',
+        cost: 5
+    }, {
+        display_name: 'Lil Chestnut',
+        description: 'Shop refreshed: 30% chance for a Trade offer. Every 6s: Gain 3 buffs of the type you have most of. Triggers 1% faster for each Gold the Star items are worth.',
+        cost: 5
+    }, 
 ]
