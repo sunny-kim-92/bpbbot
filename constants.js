@@ -96,123 +96,27 @@ export const odds = [{
 },
 ]
 
-export const rarities = [
+export const misc_types = [
     {
         id: 1,
-        name: 'common'
-    }, {
-        id: 2,
-        name: 'rare'
-    }, {
-        id: 3,
-        name: 'epic'
-    }, {
-        id: 4,
-        name: 'legendary'
-    }, {
-        id: 5,
-        name: 'godly'
-    }, {
-        id: 6,
-        name: 'unique'
-    }
-]
-
-export const classes = [
-    {
-        id: 1,
-        name: 'Ranger'
-    }, {
-        id: 2,
-        name: 'Reaper'
-    }, {
-        id: 3,
-        name: 'Berserker'
-    }, {
-        id: 4,
-        name: 'Pyromancer'
-    }
-]
-
-export const subtypes = [
-    {
-        id: 1,
-        name: 'Dark'
-    }, {
-        id: 2,
-        name: 'Holy'
-    }, {
-        id: 3,
-        name: 'Magic'
-    }, {
-        id: 4,
-        name: 'Nature'
-    }, {
-        id: 5,
-        name: 'Vampiric'
-    }, {
-        id: 6,
-        name: 'Fire'
-    }, {
-        id: 7,
-        name: 'Ice'
-    }
-]
-
-export const types = [
-    {
-        id: 1,
-        name: 'Accessory'
-    }, {
-        id: 2,
-        name: 'Armor'
-    }, {
-        id: 3,
-        name: 'Bag'
-    }, {
-        id: 4,
-        name: 'Food'
-    }, {
-        id: 5,
-        name: 'Gemstone'
-    }, {
-        id: 6,
-        name: 'Gloves'
-    }, {
-        id: 7,
-        name: 'Helmet'
-    }, {
-        id: 8,
-        name: 'Melee Weapon'
-    }, {
-        id: 9,
-        name: 'Pet'
-    }, {
-        id: 10,
-        name: 'Playing Card'
-    }, {
-        id: 11,
         name: 'Potion'
     }, {
-        id: 12,
-        name: 'Ranged Weapon'
+        id: 2,
+        name: 'Mushroom'
     }, {
-        id: 13,
-        name: 'Shield'
-    }, {
-        id: 14,
-        name: 'Shoes'
-    },
+        id: 3,
+        name: 'Stone'
+    }, 
 ]
 
 export const items = [
     {
         name: 'acorn_collar',
         display_name: 'Acorn Collar',
-        description: 'Star items gain 5% critical hit chance per luck',
+        description: 'Star items gain 5% critical hit chance for each Luck.',
         rarity: 3,
         type: 1,
-        subtype: 3,
+        subtype: [4],
         cost: 6,
         class: [1],
         id: 1
@@ -220,12 +124,12 @@ export const items = [
     {
         name: 'bag_of_stones',
         display_name: 'Bag of Stones',
-        description: 'Star stones above can be thrown repeatedly',
+        description: 'Star Stones above can be thrown repeatedly.',
         rarity: 2,
         type: 1,
         subtype: null,
         cost: 3,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 2
     },
     {
@@ -236,7 +140,7 @@ export const items = [
         type: 1,
         subtype: 5,
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 3
     },
     {
@@ -247,7 +151,7 @@ export const items = [
         type: 1,
         subtype: 2,
         cost: 12,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 4
     },
     {
@@ -258,7 +162,7 @@ export const items = [
         type: 1,
         subtype: null,
         cost: 5,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 5
     },
     {
@@ -269,7 +173,7 @@ export const items = [
         type: 1,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 6
     },
     {
@@ -289,9 +193,9 @@ export const items = [
         display_name: 'Djinn Lamp',
         rarity: 5,
         type: 1,
-        subtype: null,
+        subtype: [8],
         cost: 11,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 8
     },
     {
@@ -300,9 +204,9 @@ export const items = [
         display_name: 'Fanfare',
         rarity: 4,
         type: 1,
-        subtype: null,
+        subtype: [8],
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 9
     },
     {
@@ -311,9 +215,9 @@ export const items = [
         display_name: 'Flute',
         rarity: 3,
         type: 1,
-        subtype: null,
+        subtype: [8],
         cost: 6,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 10
     },
     {
@@ -322,9 +226,9 @@ export const items = [
         display_name: 'Healing Herbs',
         rarity: 1,
         type: 1,
-        subtype: 3,
+        subtype: 4,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 11
     },
     {
@@ -333,7 +237,7 @@ export const items = [
         display_name: 'Lucky Clover',
         rarity: 2,
         type: 1,
-        subtype: 3,
+        subtype: 4,
         cost: 2,
         class: [1],
         id: 12
@@ -344,9 +248,9 @@ export const items = [
         display_name: 'Mana Orb',
         rarity: 3,
         type: 1,
-        subtype: null,
+        subtype: [8],
         cost: 6,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 13
     },
     {
@@ -357,7 +261,7 @@ export const items = [
         type: 1,
         subtype: null,
         cost: 3,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 14
     },
     {
@@ -366,9 +270,9 @@ export const items = [
         display_name: 'Pocket Sand',
         rarity: 1,
         type: 1,
-        subtype: 3,
+        subtype: [4],
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 15
     },
     {
@@ -377,9 +281,9 @@ export const items = [
         display_name: 'Walrus Tusk',
         rarity: 1,
         type: 1,
-        subtype: 3,
+        subtype: [4],
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 16
     },
     {
@@ -390,7 +294,7 @@ export const items = [
         type: 1,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 17
     },
     {
@@ -401,7 +305,7 @@ export const items = [
         type: 2,
         subtype: 2,
         cost: 13,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 18
     },
     {
@@ -412,7 +316,7 @@ export const items = [
         type: 2,
         subtype: null,
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 19
     },
     {
@@ -423,7 +327,7 @@ export const items = [
         type: 3,
         subtype: null,
         cost: 3,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 20
     },
     {
@@ -434,7 +338,7 @@ export const items = [
         type: 3,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 21
     },
     {
@@ -445,7 +349,7 @@ export const items = [
         type: 3,
         subtype: null,
         cost: 5,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 22
     },
     {
@@ -456,7 +360,7 @@ export const items = [
         type: 3,
         subtype: null,
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 23
     },
     {
@@ -467,7 +371,7 @@ export const items = [
         type: 3,
         subtype: null,
         cost: 5,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 24
     },
     {
@@ -476,9 +380,9 @@ export const items = [
         display_name: 'Banana',
         rarity: 1,
         type: 4,
-        subtype: 3,
+        subtype: [4],
         cost: 3,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 25
     },
     {
@@ -487,9 +391,9 @@ export const items = [
         display_name: 'Blueberries',
         rarity: 2,
         type: 4,
-        subtype: 3,
+        subtype: [4, 8],
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 26
     },
     {
@@ -498,7 +402,7 @@ export const items = [
         display_name: 'Carrot',
         rarity: 2,
         type: 4,
-        subtype: 3,
+        subtype: [4],
         cost: 3,
         class: [1],
         id: 27
@@ -509,7 +413,7 @@ export const items = [
         display_name: 'Fly Agaric',
         rarity: 2,
         type: 4,
-        subtype: 3,
+        subtype: [4],
         cost: 3,
         class: [2],
         id: 28
@@ -520,9 +424,9 @@ export const items = [
         display_name: 'Garlic',
         rarity: 1,
         type: 4,
-        subtype: 3,
+        subtype: [4],
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 29
     },
     {
@@ -531,9 +435,9 @@ export const items = [
         display_name: 'Pineapple',
         rarity: 4,
         type: 4,
-        subtype: 3,
+        subtype: [4],
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 30
     },
     {
@@ -546,9 +450,9 @@ export const items = [
         display_name: 'Pumpkin',
         rarity: 6,
         type: [4,12],
-        subtype: 3,
+        subtype: [4],
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 31,
     },
     {
@@ -559,7 +463,7 @@ export const items = [
         type: 6,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 32
     },
     {
@@ -570,7 +474,7 @@ export const items = [
         type: 7,
         subtype: null,
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 33
     },
     {
@@ -585,7 +489,7 @@ export const items = [
         type: 8,
         subtype: 5,
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 34
     },
     {
@@ -601,7 +505,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 35
     },
     {
@@ -618,7 +522,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 36
     },
     {
@@ -635,7 +539,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 12,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 37
     },
     {
@@ -651,7 +555,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 38
     },
     {
@@ -665,10 +569,10 @@ export const items = [
         name: 'hungry_blade',
         display_name: 'Hungry Blade',
         rarity: 3,
-        type: 8,
+        type: [8],
         subtype: 5,
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 39
     },
     {
@@ -685,7 +589,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 14,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 40
     },
     {
@@ -699,9 +603,9 @@ export const items = [
         display_name: 'Lightsaber',
         rarity: 5,
         type: 8,
-        subtype: 2,
+        subtype: [2],
         cost: 10,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 41
     },
     {
@@ -717,7 +621,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 42
     },
     {
@@ -733,7 +637,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 10,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 43
     },
     {
@@ -749,7 +653,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 6,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 44
     },
     {
@@ -763,9 +667,9 @@ export const items = [
         display_name: 'Thorn Whip',
         rarity: 3,
         type: 8,
-        subtype: 3,
+        subtype: [4],
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 45
     },
     {
@@ -781,7 +685,7 @@ export const items = [
         type: 8,
         subtype: 1,
         cost: 7,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 46
     },
     {
@@ -797,7 +701,7 @@ export const items = [
         type: 8,
         subtype: null,
         cost: 3,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 47
     },
     {
@@ -806,9 +710,9 @@ export const items = [
         display_name: 'Ruby Egg',
         rarity: 4,
         type: 9,
-        subtype: null,
+        subtype: [6],
         cost: 10,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 48
     },
     {
@@ -817,9 +721,9 @@ export const items = [
         display_name: 'Jynx Torquilla',
         rarity: 4,
         type: 9,
-        subtype: 3,
+        subtype: [4],
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 49
     },
     {
@@ -830,7 +734,7 @@ export const items = [
         type: 9,
         subtype: null,
         cost: 6,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 50
     },
     {
@@ -850,7 +754,7 @@ export const items = [
         display_name: 'Darkest Lotus',
         rarity: 5,
         type: 10,
-        subtype: null,
+        subtype: [1, 8],
         cost: 6,
         class: [2],
         id: 52
@@ -861,7 +765,7 @@ export const items = [
         display_name: 'Holo Fire Lizard',
         rarity: 4,
         type: 10,
-        subtype: null,
+        subtype: [6], // This card is fire type, so it can be used with fire subtype for extra damage
         cost: 5,
         class: [2],
         id: 53
@@ -883,7 +787,7 @@ export const items = [
         display_name: 'White Eyes Blue Dragon',
         rarity: 4,
         type: 10,
-        subtype: null,
+        subtype: [7],
         cost: 4,
         class: [2],
         id: 55
@@ -892,9 +796,10 @@ export const items = [
         description: 'Opponent drops below 50% health: Consume this and deal 0.3 effect damage for each debuff on your opponent',
         name: 'demonic_flask',
         display_name: 'Demonic Flask',
+        misc_type: 
         rarity: 5,
         type: 11,
-        subtype: null,
+        subtype: [1],
         cost: 7,
         class: [2],
         id: 56
@@ -907,7 +812,7 @@ export const items = [
         type: 11,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 57
     },
     {
@@ -918,7 +823,7 @@ export const items = [
         type: 11,
         subtype: null,
         cost: 6,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 58
     },
     {
@@ -1011,7 +916,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 69
     },
     {
@@ -1022,7 +927,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 70
     },
     {
@@ -1033,7 +938,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 71
     },
     {
@@ -1044,7 +949,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 16,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 72
     },
     {
@@ -1055,7 +960,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 1,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 73
     },
     {
@@ -1066,7 +971,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 74
     },
     {
@@ -1077,7 +982,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 75
     },
     {
@@ -1088,7 +993,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 8,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 76
     },
     {
@@ -1099,7 +1004,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 16,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 77
     },
     {
@@ -1110,7 +1015,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 1,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 78
     },
     {
@@ -1121,7 +1026,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 2,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 79
     },
     {
@@ -1132,7 +1037,7 @@ export const items = [
         type: 5,
         subtype: null,
         cost: 4,
-        class: [1, 2],
+        class: [1, 2, 3, 4],
         id: 80
     },
     {
@@ -1208,7 +1113,6 @@ export const items = [
         cost: 16
     },
     {
-        damage: '5-8 (2.7/s)',
         min_damage: 5, // for calculating damage range,
         max_damage: 8, // for calculating damage range,
         stamina: 1.7,
@@ -1220,7 +1124,6 @@ export const items = [
         recipe: 'Broom + Pan'
     },
     {
-        damage: '2-3 (1.8/s)',
         min_damage: 2, // for calculating damage range,
         max_damage: 3, // for calculating damage range,
         stamina: 1,
@@ -1329,10 +1232,11 @@ export const items = [
         recipe: 'Dagger + Mana Potion'
     },
     {
-        damage: '6-8 (3.9/s)',
-        stamina: '1 (0.6/s)',
-        accuracy: '90%',
-        cooldown: '1.8s',
+        min_damage: 6, // for calculating damage range,
+        max_damage: 8, // for calculating damage range,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.8,
         display_name: 'Critwood Staff',
         description: 'On attack: Use 3 Mana to deal +7 damage and for the next 1.2s, all your attacks are critical.',
         recipe: 'Acorn Collar + Magic Staff'
@@ -1355,46 +1259,51 @@ export const items = [
         recipe: 'Lucky Clover + Lucky Clover + Piggybank'
     },
     {
-        damage: '8-10 (5.6/s)',
-        stamina: '1 (0.6/s)',
-        accuracy: '90%',
-        cooldown: '1.6s',
+        min_damage: 8, // for calculating damage range,
+        max_damage: 10, // for calculating damage range,
+        stamina: 1,
+        accuracy: 90,
+        cooldown: 1.6,
         display_name: 'Hero Longsword',
         description: 'Start of battle: Star Weapons gain 3 damage',
         recipe: 'Hero Sword + Whetstone + Whetstone'
     },
     {
-        damage: '4-5 (2.6/s)',
-        stamina: '1 (0.5/s)',
-        accuracy: '100%',
-        cooldown: '1.7s',
+        min_damage: 4, // for calculating damage range,
+        max_damage: 5, // for calculating damage range,
+        stamina: 1,
+        accuracy: 100,
+        cooldown: 1.7,
         display_name: 'Falcon Blade',
         description: 'Start of battle: Star items trigger 40% faster. Attacks twice',
         recipe: 'Gloves of Haste + Gloves of Haste + Hero Sword'
     },
     {
-        damage: '8-9 (5.3/s)',
-        stamina: '1.3 (0.9/s)',
-        accuracy: '90%',
-        cooldown: '1.6s',
+        min_damage: 8, // for calculating damage range,
+        max_damage: 9, // for calculating damage range,
+        stamina: 1.3,
+        accuracy: 90,
+        cooldown: 1.6,
         display_name: 'Eggscalibur',
         description: ' On attack: Use 11 Mana: Trigger all Star food. Deals +1 damage for each Star food.',
         recipe: 'Heroic Potion + Pan'
     },
     {
-        damage: '9-11 (5/s)',
-        stamina: '0.7 (0.3/s)',
-        accuracy: '90%',
-        cooldown: '2s',
+        min_damage: 9, // for calculating damage range,
+        max_damage: 11, // for calculating damage range,
+        stamina: 0.7,
+        accuracy: 90,
+        cooldown: 2,
         display_name: 'Pandamonium',
         description: 'Star Food activates: Inflict 1 Poison',
         recipe: 'Corrupted Crystal + Pan'
     },
     {
-        damage: '3-6 (3/s)',
-        stamina: '1 (0.7/s)',
-        accuracy: '200%',
-        cooldown: '1.5s',
+        min_damage: 3, // for calculating damage range,
+        max_damage: 6, // for calculating damage range,
+        stamina: 1,
+        accuracy:200,
+        cooldown: 1.5,
         display_name: 'Magic Torch',
         name: 'magic_torch',
         description: 'On hit: Use 1 Mana: This and Star Weapons gain 1 damage',
@@ -1407,19 +1316,21 @@ export const items = [
         recipe: 'Stone + Stone + Stone Skin Potion'
     },
     {
-        damage: '4-7 (2.3/s)',
-        stamina: '0 (0/s)',
-        accuracy: '95%',
-        cooldown: '2.4s',
+        min_damage: 4, // for calculating damage range,
+        max_damage: 7, // for calculating damage range,
+        stamina: 0,
+        accuracy: 95,
+        cooldown: 2.4,
         display_name: 'Bloody Dagger',
         description: 'On hit: Gain 1 Vampirism (up to 5 per battle). Heal 4 per Star Vampiric Item. On stun: Triggers extra attack.',
         recipe: 'Blood Gem + Dagger'
     },
     {
-        damage: '5-7 (4.3/s)',
-        stamina: '0.5 (0.4/s)',
-        accuracy: '200%',
-        cooldown: '1.4s',
+        min_damage: 5, // for calculating damage range,
+        max_damage: 7, // for calculating damage range
+        stamina: 0.5,
+        accuracy: 200,
+        cooldown: 1.4,
         display_name: 'Manathirst',
         name: 'manathirst',
         description: 'On hit: Gain 2 Mana. 30 Mana gained: Deal 10 effect damage with 100% lifesteal. Deal +1 for each Vampirism.',
@@ -1448,19 +1359,21 @@ export const items = [
         recipe: 'Blood Gem + Goobert'
     },
     {
-        damage: '9-12 (3.5/s)',
-        stamina: '1.2 (0.4/s)',
-        accuracy: '85%',
-        cooldown: '3s',
+        min_damage: 9, // for calculating damage range,
+        max_damage: 12, // for calculating damage range,
+        stamina: 1.2,
+        accuracy: 85,
+        cooldown: 3,
         display_name: 'Tusk Piercer',
         description: 'Start of battle: Gain 4 Spikes. Star Weapon hits: Use 1 spike to deal +8 damage on the next attack.',
         recipe: 'Bow and Arrow + Tusk'
     },
     {
-        damage: '6-9 (2.5/s)',
-        stamina: '1.2 (0.4/s)',
-        accuracy: '85%',
-        cooldown: '3s',
+        min_damage: 6, // for calculating damage range,
+        max_damage: 9, // for calculating damage range,
+        stamina: 1.2,
+        accuracy: 85,
+        cooldown: 3,
         display_name: "Fortuna's Grace",
         description: "Start of battle: Gain 3 Luck. Star Weapon crits: Attack twice on the next attack.",
         recipe: 'Bow and Arrow + Lucky Clover + Lucky Clover'
@@ -1471,19 +1384,21 @@ export const items = [
         recipe: 'Blood Gem + Gloves of Haste'
     },
     {
-        damage: '9-12 (3.5/s)',
-        stamina: '1.2 (0.4/s)',
-        accuracy: '85%',
-        cooldown: '3s',
+        min_damage: 9, // for calculating damage range,
+        max_damage: 12, // for calculating damage range,
+        stamina: 1.2,
+        accuracy: 85,
+        cooldown: 3,
         display_name: "Belladonna's Whisper",
         description: "For every 5 damage star Weapon deals: Inflict +1 Poison on the next attack. Deals 0.5 damage per Poison of your opponent.",
         recipe: "Bow and Arrow + Pestilence Flask"
     },
     {
-        damage: '4-8 (3.8/s)',
-        stamina: '1.6 (1/s)',
-        accuracy: '90%',
-        cooldown: '1.6s',
+        min_damage: 4, // for calculating damage range,
+        max_damage: 8, // for calculating damage range,
+        stamina: 1.6,
+        accuracy: 90,
+        cooldown: 1.6,
         display_name: 'Bloodthorne',
         description: 'On hit: Convert 1 Regeneration into 1 Vampirism and 1 Spikes. Deals +1 damage for each Vampirism and Spikes',
         recipe: "Hungry Blade + Thorn Whip"
@@ -1501,28 +1416,31 @@ export const items = [
         recipe: 'Demonic Flask + Magic Staff'
     },
     {
-        damage: '9-14 (7.7/s)',
-        stamina: '1.4 (0.9/s)',
-        accuracy: '95%',
-        cooldown: '1.5s',
+        min_damage: 9, // for calculating damage range,
+        max_damage: 14, // for calculating damage range,
+        stamina: 1.4,
+        accuracy: 95,
+        cooldown: 1.5,
         display_name: 'Darksaber',
         description: 'On attack: Use 1 Mana to inflict 1 Blind. Deal +0.5 damage for each debuff of your opponent.',
         recipe: 'Corrupted Crystal + Lightsaber'
     },
     {
-        damage: '8-11 (6.8/s)',
-        stamina: '1 (0.7/s)',
-        accuracy: '100%',
-        cooldown: '1.4s',
+        min_damage: 8, // for calculating damage range,
+        max_damage: 11, // for calculating damage range,
+        stamina: 1,
+        accuracy: 100,
+        cooldown: 1.4,
         display_name: 'Crossblades',
         description: 'Start of battle: The Star Weapon gains 10 damage. The diamond item triggers 60% faster. On hit: Gain 1 damage and attack 4% faster.',
         recipe: 'Falcon Blade + Hero Longsword'
     },
     {
-        damage: '13-18 (6.2/s)',
-        stamina: '0.4 (0.2/s)',
-        accuracy: '200%',
-        cooldown: '2.5s',
+        min_damage: 13, // for calculating damage range,
+        max_damage: 18, // for calculating damage range,
+        stamina: 0.4,
+        accuracy: 200,
+        cooldown: 2.5,
         display_name: 'Holy Spear',
         description: 'On hit: Destroy 10 Block and cleanse 1 debuff for each Star free slot or Holy item. Use 10 Mana: Become invulnerable and attack 100% faster for 3s (once)',
         recipe: 'Glowing Crown + Spear'
@@ -1538,10 +1456,11 @@ export const items = [
         recipe: 'Corrupted Crystal + Demonic Flask'
     },
     {
-        damage: '15-20 (8/s)',
-        stamina: '0 (0/s)',
-        accuracy: '90%',
-        cooldown: '2.2s',
+        min_damage: 15, // for calculating damage range,
+        max_damage: 20, // for calculating damage range,
+        stamina: 0,
+        accuracy: 90,
+        cooldown: 2.2,
         display_name: 'Ruby Chonk',
         description: 'On hit: Gain 1 Heat. When you have at least 12 Heat, has a 30% chance to stun your opponent for 0.4s',
         recipe: 'Holo Fire Lizard + Ruby Whelp'
@@ -1587,10 +1506,11 @@ export const items = [
         cost: 10
     },
     {
-        damage: '4-7 (2.6/s)',
-        stamina: '0 (0/s)',
-        accuracy: '95%',
-        cooldown: '2.1s',
+        min_damage: 4, // for calculating damage range,
+        max_damage: 7, // for calculating damage range,
+        stamina: 0,
+        accuracy: 95,
+        cooldown: 2.1,
         display_name: 'Cursed Dagger',
         description: 'On stun: Triggers extra attack. On hit: Inflict 2 random debuffs. This and Star items have +1% accuracy and +1% critical hit chance per debuff of your opponent.',
         cost: 10
@@ -1621,10 +1541,11 @@ export const items = [
         recipe: 'Corrupted Crystal + Holy Armor'
     },
     {
-        damage: '15-20 (8/s)',
-        stamina: '2 (0.9/s)',
-        accuracy: '85%',
-        cooldown: '2.2s',
+        min_damage: 15, // for calculating damage range,
+        max_damage: 20, // for calculating damage range,
+        stamina: 2,
+        accuracy: 85,
+        cooldown: 2.2,
         display_name: 'Dancing Dragon',
         description: 'You have a 2% chance to resist debuffs for each Luck. Start of battle: Gain 2 Heat and 2 Luck for each Star Magic item. Deals +0.5 damage per Heat. ',
         cost: 9
@@ -1656,9 +1577,11 @@ export const items = [
     },
     {
         display_name: 'Shortbow',
-        damage: '2-3 (1.5/s)',
-        accuracy: '85%',
-        cooldown: '1.7s',
+        min_damage: 2, // for calculating damage range,
+        max_damage: 3, // for calculating damage range,
+        stamina: 0.7, // for calculating stamina usage,
+        accuracy: 85,
+        cooldown: 1.7,
         cost: 4
     },
     {
@@ -1680,10 +1603,11 @@ export const items = [
         cost: 8
     }, {
         display_name: 'Tusk Poker',
-        damage: '2-3 (1.5/s)',
-        stamina: '0.7 (0.4/s)',
-        accuracy: '85%',
-        cooldown: '1.7s',
+        min_damage: 2, // for calculating damage range,
+        max_damage: 3, // for calculating damage range,
+        stamina: 0.7,
+        accuracy: 85,
+        cooldown: 1.7,
         description: 'On hit: 50% chance to gain 1 Spikes.',
         recipe: 'Shortbow + Tusk'
     }, {
@@ -1692,10 +1616,11 @@ export const items = [
         cost: 3
     }, {
         display_name: 'Axe',
-        damage: '3-6 (2.3/s)',
-        stamina: '1.4 (0.7/s)',
-        accuracy: '85%',
-        cooldown: '2s',
+        min_damage: 3, // for calculating damage range,
+        max_damage: 6, // for calculating damage range,
+        stamina: 1.4,
+        accuracy: 85,
+        cooldown: 2,
         description: 'On hit: Gain 1 damage',
         cost: 6
     }, {
@@ -1727,10 +1652,11 @@ export const items = [
     }, 
     {
         display_name: 'Fortuna\'s Hope',
-        damage: '2-3 (1.5/s)',
-        stamina: '0.7 (0.4/s)',
-        accuracy: '100%',
-        cooldown: '1.7s',
+        min_damage: 2, // for calculating damage range,
+        max_damage: 3, // for calculating damage range,
+        stamina: 0.7, // for calculating stamina usage,
+        accuracy: 100,
+        cooldown: 1.7,
         description: 'On hit: 75% chance to gain 1 Luck.',
         cost: 8,
         recipe: 'Shortbow + Lucky Clover + Lucky Clover'
@@ -1761,10 +1687,11 @@ export const items = [
         recipe: 'Goobert + Chili Pepper'
     }, {
         display_name: 'Belladonna\'s Shade',
-        damage: '2-11 (3.8/s)',
-        stamina: '0.7 (0.4/s)',
-        accuracy: '85%',
-        cooldown: '1.7s',
+        min_damage: 2, // for calculating damage range,
+        max_damage: 11, // for calculating damage range,
+        stamina: 0.7,
+        accuracy: 85,
+        cooldown: 1.7,
         description: 'On hit: 70% chance to inflict 2 Poison and a random debuff.',
         cost: 11,
         recipe: 'Shortbow + Pestilence Flask'
@@ -1772,16 +1699,31 @@ export const items = [
         display_name: 'Strong Mana Potion',
         description: 'Mana used or health drops below 50%: Consume this and gain 9 Mana and 25 maximum health.',
         cost: 7,
-        recipe: 'Mana Potion + Cauldron'
+        recipe: 'Mana Potion + Cauldron',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Spiked Collar',
         description: 'Battle Rage lasts 2s longer. Battle Rage entered: Gain 1 Spikes.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Stone Armor',
         description: 'Items use +20% stamina. Start of battle: Gain 110 Block. Every 4s: Remove 1 Spikes and 2 Empower from opponent. Health drops below 50%: Gain Block equal to 40% of your missing health (once).',
         cost: 13,
-        recipe: 'Stoneskin Potion + Leather Armor'
+        recipe: 'Stoneskin Potion + Leather Armor',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Molten Dagger',
         min_damage: 3,
@@ -1791,7 +1733,12 @@ export const items = [
         cooldown: 3.5,
         description: 'On hit: Use 1 Heat to gain 2 damage. On stun: Triggers extra attack.',
         cost: 6,
-        recipe: 'Dagger + Flame + Flame'
+        recipe: 'Dagger + Flame + Flame',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Double Axe',
         min_damage: 6,
@@ -1801,7 +1748,12 @@ export const items = [
         cooldown: 1.8,
         description: 'On hit: Gain 2 damage. Battle rage entered: Trigger extra attack. Damage gain increased to 3.',
         cost: 12,
-        recipe: 'Axe + Axe'
+        recipe: 'Axe + Axe',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Molten Spear',
         min_damage: 3,
@@ -1811,7 +1763,12 @@ export const items = [
         cooldown: 1.5,
         description: 'Before miss: Use 1 Heat to hit instead and deal +5 damage. On hit: Destroy 5 Block for each star Fire item.',
         cost: 8,
-        recipe: 'Spear + Flame + Flame'
+        recipe: 'Spear + Flame + Flame',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Burning Swort',
         min_damage: 2,
@@ -1821,17 +1778,32 @@ export const items = [
         cooldown: 1.6,
         description: 'On hit: 60% chance to gain 1 Heat. 7 Heat gained: This and star Weapons gain +1 damage.',
         cost: 9,
-        recipe: 'Hero Sword + Flame + Flame'
+        recipe: 'Hero Sword + Flame + Flame',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Vampiric Potion',
         description: 'Both characters drop bwlow 50% health: Consume this and gain 3 Vampirism and deal 15 Effect-damage with 100% lifesteal.',
         cost: 8,
-        recipe: 'Strong Health Potion + Blood Gem'
+        recipe: 'Strong Health Potion + Blood Gem',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Gloves of Power',
         description: 'Start of battle: Star Weapons deal +20% damage but attack 10% slower. Star Weapon hits: Gain 7 Block.',
         cost: 10,
-        recipe: 'Gloves of Haste + Stoneskin Potion'
+        recipe: 'Gloves of Haste + Stoneskin Potion',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Frostbite',
         min_damage: 4,
@@ -1841,23 +1813,48 @@ export const items = [
         cooldown: 1.7,
         description: 'On hit: 45% chance to inflict 1 Cold. Opponent reaches 30 Cold: Gain 5 Vampirism (once). Deals +1 damage per Vampirism and +0.4 per Cold of your opponent.',
         cost: 11,
-        recipe: 'Hungry Blade + Snowball'
+        recipe: 'Hungry Blade + Snowball',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Mrs. Struggles',
         description: 'Every 4s: Remove 1 buff of each type from your opponent. Triggers 10% faster for each star Dark-item.',
-        cost: 7
+        cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Badger Rune',
         description: 'Weapon sockets: On hit: Attack 3% faster. Armor & other sockets: During Battle Rage: Reduce Melee/Ranged damage taken by 7. Backpack: Items use -10% stamina.',
-        cost: 4
+        cost: 4,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Elephant Rune',
         description: 'Weapon sockets: On hit: 25% chance to stun for 0.5s (cooldown 3s). Armor & other sockets: 40% chance to resist debuffs for 4s. Backpack: Gain 40 maximum health.',
-        cost: 4
+        cost: 4,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Cheese',
         description: 'Every 3.8s: Gain 10 maximum health and a random buff.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Courage Puppy',
         min_damage: 5,
@@ -1867,14 +1864,29 @@ export const items = [
         cooldown: 3.5,
         description: 'Deals +2 damage for each Star Pet.',
         cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Power Puppy',
         description: 'Every 3.2s: Randomly gain 1 Luck or 1 Regeneration or 1 Empower. Triggers 10% faster for each star Pet.',
-        cost: 7
+        cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Hawk Rune',
         description: 'Weapon sockets: Critical hit chance +12%. Critical damage +15%. Armor & other sockets: 25% chance to resist Blind. Backpack: Every 2.8s: Inflict 1 Blind.',
-        cost: 4
+        cost: 4,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Chain Whip',
         min_damage: 4,
@@ -1884,7 +1896,12 @@ export const items = [
         cooldown: 2.4,
         description: 'During Battle Rage additionally heal for 8. Deals +1 damage for each buff you removed from your opponent. On hit: Remove 2 random buffs from your opponent.',
         cost: 8,
-        recipe: 'Thorn Whip + Forging Hammer / Thorn Whip + Utility Pouch'
+        recipe: 'Thorn Whip + Forging Hammer / Thorn Whip + Utility Pouch',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Brass Knuckles',
         min_damage: 3,
@@ -1894,6 +1911,11 @@ export const items = [
         cooldown: 2.5,
         description: 'On hit: 50% chance to stun for 0.3s, this and star Items gain 5% accuracy and 5% critical hit chance. During Battle Rage: Trigger 50% faster.',
         cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Burning Blade',
         min_damage: 10,
@@ -1903,36 +1925,76 @@ export const items = [
         cooldown: 1.6,
         description: 'On hit: Gain 1 Heat. 6 Heat gained: This and star Weapons gain 1 damage.',
         cost: 17,
-        recipe: 'Hero Longsword + Flame + Flame / Burning Sword + Whetstone + Whetstone'
+        recipe: 'Hero Longsword + Flame + Flame / Burning Sword + Whetstone + Whetstone',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Divine Potion',
         description: 'You reached 10 debuffs: Consume this and cleanse 10 debuffs.',
-        cost: 7
+        cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Strong Vampiric Potion',
         description: 'Both characters drop below 80% health: Consume this and gain 5 Vampirism and 35% lifesteal for 6s.',
         cost: 12,
-        recipe: 'Vampiric Potion + Cauldron'
+        recipe: 'Vampiric Potion + Cauldron',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Wisdom Puppy',
         description: 'Every 4s: Gain 10 Block and cleanse 1 Cold. Triggers 15% faster for each Star Pet.',
         cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Wolf Emblem',
         description: 'Wolf companions are offered in the shop. Star Weapons have 10% critical hit chance (+12% for each Diamond Pet). Every 3s: If you have at least 10 Block, gain 1 Empower. Otherwise, gain 10 Block.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Emerald Egg',
         description: 'Start of battle: Gain 3 Luck. Hatches after 2 rounds in your backpack.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Sapphire Egg',
         description: 'Start of battle: Gain 4 Mana. Hatches after 2 rounds in your backpack.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amethyst Egg',
         description: 'Start of battle: Inflict 4 random debuffs. Hatches after 2 rounds in your backpack.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Flame Whip',
         min_damage: 6,
@@ -1942,7 +2004,12 @@ export const items = [
         cooldown: 1.7,
         description: 'On hit: Use 1 Spikes to gain 4 Heat and deal +8 damage.',
         cost: 10,
-        recipe: 'Thorn Whip + Flame + Flame'
+        recipe: 'Thorn Whip + Flame + Flame',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Staff of Fire',
         min_damage: 10,
@@ -1952,7 +2019,12 @@ export const items = [
         cooldown: 1.8,
         description: 'On attack: Use 2 Mana and 2 Heat to gain 6 damage.',
         cost: 18,
-        recipe: 'Magic Staff + Draconic Orb'
+        recipe: 'Magic Staff + Draconic Orb',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Phoenix',
         min_damage: 15,
@@ -1962,16 +2034,31 @@ export const items = [
         cooldown: 2.5,
         description: 'On attack: Lose 11 health. Before defeat: Use all your heat to reincarnate with 6 health per Heat (once).',
         cost: 11,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Moon Armor',
         description: 'Start of battle: Gain 50 Block + 20 Block for each Star Mana-item. Every 2.6s: Gain 3 Mana and reflect 2 debuffs.',
         cost: 19,
-        recipe: 'Holy Armor + Mana Orb'
+        recipe: 'Holy Armor + Mana Orb',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Strong Divine Potion',
         description: 'You reached 10 debuffs: Consume this and clenase 10 debuffs and gain 8 random buffs.',
         cost: 15,
-        recipe: 'Divine Potion + Cauldron'
+        recipe: 'Divine Potion + Cauldron',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Busted Blade',
         min_damage: 30,
@@ -1981,17 +2068,32 @@ export const items = [
         cooldown: 5,
         description: 'During Battle Rsage: Debcrease stamina usage to 3 and cooldown to 3s. Deals +5 damage per Empower.',
         cost: 14,
-        recipe: 'Impractically Large Greatsword + Forging Hammer / Impractically Large Greatsword + Utility Pouch'
+        recipe: 'Impractically Large Greatsword + Forging Hammer / Impractically Large Greatsword + Utility Pouch',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Cheese Goobert',
         description: '5 Star item activations: Gain 20 maximum health and 2 random buffs.',
         cost: 14,
-        recipe: 'Goobert + Cheese'
+        recipe: 'Goobert + Cheese',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Rainbow Goobert Deathslushy Mansquisher',
         description: '9 Star item activations: Gain 20 maximum health, 20 Block, 2 Vampirism and 2 random buffs, inflict 3 Blind, and Star Weapons gain 4 damage.',
         cost: 57,
-        recipe: 'Cheese Goobert + Light Goobert + Steel Goobert + Blood Goobert'
+        recipe: 'Cheese Goobert + Light Goobert + Steel Goobert + Blood Goobert',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Armored Courage Puppy',
         min_damage: 7,
@@ -2001,17 +2103,32 @@ export const items = [
         cooldown: 3.5,
         description: 'Cannot be blocked by shields or trigger Spikes. Deals +2 damage for each Star Pet.',
         cost: 7,
-        recipe: 'Courage Puppy + Forging Hammer / Courage Puppy + Utility Pouch'
+        recipe: 'Courage Puppy + Forging Hammer / Courage Puppy + Utility Pouch',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Armored Wisdom Puppy',
         description: 'Every 4s: Gain 14 Block and cleanse 1 Cold. Increase Block gain by 1. Triggers 15% faster for each Star Pet.',
         cost: 7,
-        recipe: 'Wisdom Puppy + Forging Hammer / Wisdom Puppy + Utility Pouch'
+        recipe: 'Wisdom Puppy + Forging Hammer / Wisdom Puppy + Utility Pouch',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Armored Power Puppy',
         description: 'Every 2.8s: Randomly gain 1 Luck or 1 Regeneration or 1 Empower. Triggers 10% faster for each Star Pet. Triggers 20% faster for each Star Food.',
         cost: 7,
-        recipe: 'Power Puppy + Forging Hammer / Power Puppy + Utility Pouch'
+        recipe: 'Power Puppy + Forging Hammer / Power Puppy + Utility Pouch',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Emerald Whelp',
         min_damage: 5,
@@ -2021,6 +2138,11 @@ export const items = [
         cooldown: 2.1,
         description: 'Start of battle: Gain 3 Luck. On hit: Inflict 3 Poison.',
         cost: 14,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Sapphire Whelp',
         min_damage: 5,
@@ -2030,6 +2152,11 @@ export const items = [
         cooldown: 2.1,
         description: 'Start of battle: Gain 4 Mana. On hit: Use 1 Mana to Gain 5 Block and a random other buff.',
         cost: 14,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Amethyst Whelp',
         min_damage: 5,
@@ -2039,6 +2166,11 @@ export const items = [
         cooldown: 2.1,
         description: 'Start of battle: Inflict 4 random debuffs. On hit: Remove a random buff from your opponent.',
         cost: 14,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Obsidian Dragon',
         min_damage: 11,
@@ -2048,22 +2180,42 @@ export const items = [
         cooldown: 2.1,
         description: '10 Heat gained: Gain 2 damage and the next hit of the Star Weapon is critical.',
         cost: 18,
-        recipe: 'Ruby Whelp + Draconic Orb'
+        recipe: 'Ruby Whelp + Draconic Orb',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Sun Shield',
         description: 'Star items gained 12 Block: Deal 4 Effect-damage. On attacked (melee/ranged): 30% chance to prevent 15 damage and remove 0.7 stamina from your opponent.',
         cost: 14,
-        recipe: 'Shield of Valor + Flame + Flame'
+        recipe: 'Shield of Valor + Flame + Flame',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Sun Armor',
         description: 'Star Fire-items gain Holy. Start of battle: Gain 70 Block. Gain 1 Heat for each Star Holy-item. Every 3s: Use 1 Heat to heal for 12 and cleanse 2 debuffs.',
         cost: 15,
-        recipe: 'Holy Armor + Flame + Flame'
+        recipe: 'Holy Armor + Flame + Flame',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Rainbow Goobert Epicglob Uberviscous',
         description: '6 Star item activations: Heal for 14, gain 20 Block, 2 Vampirism and 4 Heat, inflict 3 Blind, and Star Weapons gain 4 damage.',
         cost: 54,
-        recipe: 'Chili Goobert + Light Goobert + Steel Goobert + Blood Goobert'
+        recipe: 'Chili Goobert + Light Goobert + Steel Goobert + Blood Goobert',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Ice Dragon',
         min_damage: 15,
@@ -2073,23 +2225,48 @@ export const items = [
         cooldown: 2.1,
         description: 'On hit: Inflict 1 Cold. Opponent reaches 10 Cold: Gain 60 Block. You take -20% Effect-damage.',
         cost: 14,
-        recipe: 'Ruby Whelp + White-Eyes Blue Dragon'
+        recipe: 'Ruby Whelp + White-Eyes Blue Dragon',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Big Bowl of Treats',
         description: 'Every 3.7s: Gain 2 random buffs and make Star Food trigger 25% faster (up to 100%). All your Pets have a 20% chance to activate twice. Friends of the forest are offered in the shop.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Mega Clover',
         description: 'Sale chance +5%. Chance to find Unique-items +20%. Shop entered: Generate two Lucky Clovers. 15 Luck reached: Gain 25 random other buffs.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Snake',
         description: '4% chance for each Luck to protect Poison on your opponent from being cleansed. Start of battle: Gain 4 Luck and 50 maximum health for each Star Pet. Every 2.3s: Inflict 2 Poison.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Cauldron',
         description: 'Shop enetered: Upgrade an adjacent Potion. Every 3.5s: Heal for 20 or gain 6 Mana or gain 5 Heat. Triggers 15% faster for each Star Food or Potion.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Forging Hammer',
         min_damage: 2,
@@ -2098,47 +2275,102 @@ export const items = [
         accuracy: 95,
         cooldown: 3.5,
         description: 'Deals additional +1 damage per Empower.',
-        cost: 3
+        cost: 3,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Anvil',
         description: 'Item crafted: Generate a Flame. For each Star crafted item, the Diamond Weapons deal +1 damage and use -5% stamina.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Deerwood Gaurdian',
         description: 'Damage taken reduced by 10%. Battle Rage lasts 0.8s longer for each Star Nature-item. Every 1s during Battle Rage: Heal for 13 and gain 3 Mana.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Shaman Mask',
         description: 'Runes are offered in the shop. Start of battle: Gain 1 Luck for each socketed Gemstone. Every 3.4s: Use 2 Luck to gain 5 random buffs.',
         cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Friendly Fire',
         description: 'Every 2.8s: Use 1 Mana to gain 2 Heat. Triggers 10% faster for each Star Fire-item. 20 Heat reached: Gain 5 Luck. 40 Heat reached: Gain 15 Regeneration. 60 Heat reached: Deal 100 Effect-damage.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Burning Banner',
         description: '25% chance to protect your buffs from removal and your opponent\'s debuffs from cleansing. Star Holy-item activates: 50% chance to inflict 1 Blind for 5s. Every 3.8s: Remove 2 buffs from your opponent and gain 2 Regeneration.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Dark Lantern',
         description: 'Start of battle: Lose 50% health. Before defeat: Reincarnate with 50% health and befome invulnerable for 1.5s (once). On reincarnation: Deal 5 Effect-damage for each Star Fire-item and inflict 7 debuffs for each Diamond Dark-item.',
         cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Frozen Flame',
         description: 'Start of battle: Gain 30 Block for each Star Ice-item. 6 Heat gained: Inflict 2 COld. For each Cold of your opponent, the Diamond item has +1.5% critical hit chance and +2% critical damage. Additional Ice-items are offered in the shop.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Dragon Nest',
         description: 'Start of battle: Gain 2 Luck, 2 Regeneration, 4 Mana, and 2 Heat. Star Dragon attacks: Heal for 5. Star Gradon eggs hatch after 1 round. Additional dragon eggs are offered in the shop.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Duffle Bag',
         description: 'Add 6 backpack slots. Health drops below 50%: Enter Battle Rage for 5s (once). During Battle Rage: Items inside trigger 30% faster. You take 22% reduced damage.',
-        cost: 16
+        cost: 16,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Fire Pit',
         description: 'Add 9 backpack slots. Shop entered: Spend 1 Gold to generate a Flame. Start of battle: Gain 5 maximum health for each Fire-item inside.',
-        cost: 20
+        cost: 20,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, 
     {
         display_name: 'Serpent Staff',
@@ -2149,7 +2381,12 @@ export const items = [
         cooldown: 1.8,
         description: 'On attack: Use 4 Mana to gain 2 damage and inflict 1 Poison for each 4 damage dealt. You have 30% chance to duplicate Poison you inflict.',
         cost: 17,
-        recipe: 'Mana Staff + Pestilence Flask'
+        recipe: 'Mana Staff + Pestilence Flask',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },
     {
         display_name: 'Spiked Staff',
@@ -2160,7 +2397,12 @@ export const items = [
         cooldown: 1.8,
         description: 'On attack: Use 3 Mana to gain 2 Empower, and during Battle Rage also gain 2 Spikes.',
         cost: 16,
-        recipe: 'Mana Staff + Spiked Collar'
+        recipe: 'Mana Staff + Spiked Collar',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },
     {
         display_name: 'Thornbloom',
@@ -2171,105 +2413,225 @@ export const items = [
         cooldown: 2.1,
         description: 'On hit: Gain 1 Spikes. 60% chance to gain 1 Empower. Empower gained: Gain 11 maximum health. Deals +1 damage per Spikes.',
         cost: 14,
-        recipe: 'Thorn Whip + Heroic Potion'
+        recipe: 'Thorn Whip + Heroic Potion',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },
     {
         display_name: 'King Crown',
         description: 'Every 2.4s: Heal for 8 and protect 1 buff from removal. Use 10 Mana: Become invulnerable for 2.5s (once). Effects of Gemstones socketed in this are increased by 50%',
         cost: 17,
-        recipe: 'Glowing Crown + Box of Riches'
+        recipe: 'Glowing Crown + Box of Riches',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'King GOobert',
         description: '6 Star item activations: Heal for 35, protect 3 buffs from removal and use 4 Mana to become invulnerable for 1.5s (up to 3 times). Effects of Gemstones socketed in this are increased by 50%.',
         cost: 23,
-        recipe: 'Goobert + King Crown'
+        recipe: 'Goobert + King Crown',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Leaf Badge',
         description: 'Ranger items are offered in the shop. Star items gain 2% critical hit chance for each Luck. Every 2.2s: Gain 1 Luck.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Skull Badge',
         description: 'Reaper items are offered in the shop. Every 1.5s: Inflict a random debuff.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Wolf Badge',
         description: 'Berserker items are offered in the shop. Health drops below 50%: Enter Battle Rage for 5s (once). During Battle Rage: Star items trigger 25% faster. You take 18% reduced damage.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Flame Badge',
         description: 'Pyromancer items are offered in the shop. Shop entered: 65% chance to spend 1 Gold to generate a Flame. Start of battle: Gain 6 Heat.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Rainbow Badge',
         description: 'Items of all classes are offered in the shop. After 7s: Gain 1 of every type of buff.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Stone Badge',
         description: 'Your starting class items are no longer offered in the shop (even when this item is in storage). Shop entered: Generate items worth 1 Gold. Every 3s: Gain 4 Block.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Jimbo',
         description: 'On reveal: Gain 6 random buffs. For each pair before: Resist 1 critical hit. For each three of a kind before: Your Weapons use -25% stamina. For each four of a kind before: Activate 2 random revealed cards (except Jimbos).',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Shiny Shell',
         description: 'After 5s: Heal for 5 + 3 for each Star Holy-item.',
-        cost: 2
+        cost: 2,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Unidentified Amulet',
         description: 'On buy: Gain a random effect.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of Life',
         description: 'Start of battle: Gain 20 maximum health. Your healing is increased by 20%.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of Steel',
         description: 'Start of battle: Gain 30 Block. Star items gained 40 Block: Gain 1 Empower.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of Feasting',
         description: 'Star Food triggers 40% faster. Food bought: Restock with a random Food.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of Energy',
         description: 'Start of battle: The Star item triggers 100% faster for 1s. Buff used: Refund 25% of the used buffs.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of the Wild',
         description: 'After 5s: Trigger the Star Pet and gain 4 Spikes. Return damage limit of Spikes against Melee and Ranged attacks +50%.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of Alchemy',
         description: 'Start of battle: Gain 3 random buffs. Star Potion consumed: 70% chance to repeat its effect after 2.5s.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Shell Totem',
         stamina: 2,
         description: 'Every 3.6s: If your health is above 70%, gain 1 Empower. Otherwise, heal for 8. Uses -15% stamina for each Star Holy-item.',
         cost: 5,
-        recipe: 'Wooden Sword + Shiny Shell'
+        recipe: 'Wooden Sword + Shiny Shell',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Oil Lamp',
         description: 'Start of battle: Gain 2 Heat. Every 3.4s: The Star Weapon gains 1 damage and 5% accuracy.',
-        cost: 7
+        cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Toad',
         description: 'Star items gained 10 buffs: Heal for 12. Star items used 10 buffs: Gain 1 Luck and 1 Mana. Every 3.8: Gain 1 Luck and 1 Mana.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Box of Prosperity',
         description: 'Add 4 backpack slots. SHop entered: If this has at least 2 Godly or Unique items inside, generate a chipped Gemstone.',
         cost: 5,
-        recipe: 'Box of Riches + Maneki-Neko'
+        recipe: 'Box of Riches + Maneki-Neko',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Maneki-neko',
         description: 'Sale chance +3%. Value of Star items > 20 Gold: 15% chance to resist critical hits. Value of Star items > 40 Gold: Godly and Unique items trigger 15% faster.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Prismatic Orb',
         description: 'Start of battle: For each...Star Mana-item: Gain 2 Mana. Star Vampiric-item: Gain 1 Vampirism. Star Holy-item: Increase your healing by 4%. Star Dark-item: Inflict a random debuff. Every 8s: Gain 1 of every type of buff.',
-        cost: 14
+        cost: 14,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },  {
         display_name: 'Prismatic Sword',
         min_damage: 10,
@@ -2279,7 +2641,12 @@ export const items = [
         cooldown: 1.4,
         description: 'For each...Star Mana=item: +8% attack speed. Star Vampiric-item: +15% lifesteal. Star Holy-item: Gain +0.3 damage on hit. Star Dark-item: +10% chance to inflict 4 random debuffs on hit.',
         cost: 17,
-        recipe: 'Wooden Sword + Prismatic Orb'
+        recipe: 'Wooden Sword + Prismatic Orb',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Stone Golem',
         min_damage: 8,
@@ -2288,11 +2655,17 @@ export const items = [
         accuracy: 85,
         cooldown: 5.5,
         description: 'On hit: Gain 1 Empower. 30% chance to stun for 0.5s. Use 7 Regeneration: Reduce cooldown to 2.6s and gain 150 Block (once). Deals +10 damage for each Star Bag of Stones.',
-        cost: 3
+        cost: 3,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Rat Chef',
         description: 'Start of battle: Gain 1 Regeneration for each Star Food. Every 7s: Regenerate 2 stamina and gain 1 Empower. Triggers 15% faster for each Star Pet or Food.',
-        cost: 
+        cost: 8,
+        recipe: 'Rat + Healing Herbs'
     }, {
         display_name: 'Squirrel Archer',
         min_damage: 2,
@@ -2302,100 +2675,220 @@ export const items = [
         cooldown: 3.2,
         description: 'On hit: Steal a random buff. Triggers 15% faster for each Star Pet or Food.',
         cost: 9,
-        recipe: 'Squirrel + Shortbow'
+        recipe: 'Squirrel + Shortbow',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Goobling',
         description: '3 Star item activations: Heal for 4.',
-        cost: 2
+        cost: 2,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Doom Cap',
         description: 'Every 2.9: Inflict 3 Poison and reduce opponent\'s healing by 10%.',
         cost: 10,
-        recipe: 'Fly Agaric + Demonic Flask'
+        recipe: 'Fly Agaric + Demonic Flask',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Spicy Banana',
         description: 'Star Banana activates: 40% chance to gain 1 Heat. 1 stamina used: Heal for 3.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Smelly Wall',
         description: 'Star Garlic gains +5 Block. 18 Block gained: Inflict 1 Poison.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Piggy Pinata',
         description: 'Destroying a Piggybank generates items instead. Shop entered: Piggybanks have a 30% chance to explode. Star items gain 5% critical hit chance.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Investment Opportunity',
         description: 'Shop entered: Gain 1 Gold. Star item used buff: Gain 4 maximum health.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Superspacious',
         description: 'Bags appear more often in the shop and have +30% chance to be on sale. Star items trigger 7% faster for each free Diamond slot.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'It\'s Slime Time!',
         description: 'Gooblings are offered in the shop. On buy: Generate a Goobling. Every 1.9s: Advance all Gooberts and GOoblings by 1 activation.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Smithing For Dummies',
         description: 'On buy: Generate a Whetstone. Start of battle: Star Crafted Weapons gain 1 damage and use -22% stamina.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Markswoman',
         description: 'Star Ranged-Weapons deal +20% damage, attack +25% faster and have +15% accuracy.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Mushroom Farm',
         description: 'SHop entered: If you have at least 2 Mushrooms, generate a Fly Agaric. Start of battle: Star Mushrooms trigger 50% faster.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Extra Angy',
         description: 'Battle Rage ended: After 4s, enter Battle Rage for 60% of the duration (once).',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Everburning',
         description: 'Burning Sword and Burning Blade use -60% stamina. After 7s: Gain 1 Heat for each Flame.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Shielded',
         description: 'Star Shields have +30% chance to block. Star Armors trigger 60% faster.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Stoned',
         description: 'Stone or Stone GOlem dealt damage: Gain 65% of the damage as Block. While you have Block: You take -15% damage.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
-        display_name: 'Mana Master',
+        display_name: 'Mana Mastery',
         description: 'Mana Orbs gain +20 random buffs. Every 4.7s: Gain 3 Mana. Triggers 20% faster for each Star Mana-item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Power of the Moon',
         description: 'Fatigue starts 5s earlier. Star Moon Armor activates: Inflict 1 Blind. Star Moon SHield activates: Reflect 1 debuff. Fatigue starts: Increase your maximum health by 65%.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Hardwood',
         description: 'Star Common Melee-Weapons deal +150% damage. Start of battle: Gain 20 Block for each Star Common item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Acorn Ace',
         description: 'Acorn Collars have more Star slots. Items affected by Acorn Collar use -12% stamina. Critwood Staffs use -75% stamina.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Dark Ritual',
         description: 'After 17s: Inflict 20 debuffs, gain 10 Vampirism. Triggers 20% faster for each Star Dark-item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Dragon Set',
         description: 'Every 1.2s during Battle Rage: Gain 1 Heat. If you have Dragonscale Armor, Dragonskin Boots and Dragon Claws: You have +2% lifesteal for each Heat (up to 20%).',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Solaris',
         description: '15% chance to duplicate any Heat you gain. Star Sun SHield blocked damage: 60% chance to gain 1 Heat. Star Sun Armor uses Heat: Gain 16 Block.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Unstable Recombobulator',
         description: 'Shop entered: Consume this and Star items. Create different items based on the combined value. Every 4s: Gain 1 random buff and cleanse 1 debuff.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Artifact Stone: Death',
         min_damage: 7,
@@ -2404,65 +2897,140 @@ export const items = [
         accuracy: 90,
         cooldown: 1.7,
         description: 'Can only be thrown once per battle. On hit: Inflict Fatigue damage. Star items have +8% critical hit chance per Fatigue level of your opponent.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },
     {
         display_name: 'Cubert',
         description: 'Star item activates: 55% chance to gain 1 Regeneration. Diamond item activates: 55% chance to use 1 Regeneration to gain 1 Empower.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Unsettling Presence',
         description: 'Deal 30% of your healing as Effect-damage. Every 3s: Use a random buff to heal for 12.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Stable Recombobulator',
         description: 'Shop entered: Consume Star items. Create different items based on the combined value. Every 2.5s: Gain 1 random buff and cleanse 1 debuff.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Star of Courage',
         description: 'Chance to find Unique-items +5%. Your Weapons use -5% stamina. (Rewarded for starting as a random character.)',
-        cost: 1
+        cost: 1,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Time Dilator',
         description: 'Your and your opponent\'s Weapons attack 30% slower. Every 1s: your item with the highest cooldown triggers 6% faster.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Sack of Surprises',
         description: 'Game started: Replace this with random starting bags and items.',
-        cost: 10
+        cost: 10,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Vineweave Basket',
         description: 'Add 9 backpack slots. Your healing is amplified by 10% + 5% per Nature-item inside. In rounds 1 and 10, sale chance is increased by 20%.',
-        cost: 20
+        cost: 20,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Relic Case',
         description: 'Add 4 backpack slots. Every 3.2s: Weapons inside deal +5% damage and use -5% stamina.',
-        cost: 12
+        cost: 12,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Utility Pouch',
         description: 'Add 8 backpack slots. Weapons insde deal +30% damage but attack 30% slower. After 5s: Enter Battle Rage for 6s. During Battle Rage: +35% lifesteal.',
-        cost: 18
+        cost: 18,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Offering Bowl',
         description: 'Add 4 backpack slots. Start of battle: Gain 1 Empower. Shop entered: Consume all items inside. Create a Flame and different items based on the combined value.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Amulet of Darkness',
         description: '22 Effect-damage dealt: Inflict 1 random debuff. Star item activates: 30% chance to deal 7 Effect-damage.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Shepherd\'s Crook',
         description: 'Start of battle: Star Weapons gain 2 damage. 35% chance to protect your buffs from removal. 50% chance to resist Blind and Cold.',
         cost: 8,
-        recipe: 'Broom + Whetstone'
+        recipe: 'Broom + Whetstone',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Wonky Snowman',
         description: 'On buy: Split into 2 Snowballs.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Snowball',
         description: 'Start of battle: Inflict 2 Cold. Your opponent gains 15% less maximum health from items.',
-        cost: 4
+        cost: 4,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Snow Stick',
         min_damage: 6,
@@ -2472,12 +3040,22 @@ export const items = [
         cooldown: 2.1,
         description: 'On hit: Inflict 3 Cold and 2 Cold to yourself.',
         cost: 8,
-        recipe: 'Broom + Snowball'
+        recipe: 'Broom + Snowball',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Stone Shoes',
         description: 'Health drops below 70%: Gain 1 Luck, 1 Empower, and 45 Block. Reduce Ranged/Effect-damage taken by 35% for 7s (once).',
         cost: 12,
-        recipe: 'Leather Boots + Stoneskin Potion'
+        recipe: 'Leather Boots + Stoneskin Potion',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Katana',
         min_damage: 8,
@@ -2487,51 +3065,111 @@ export const items = [
         cooldown: 1.7,
         description: 'On hit: Remove 1 damage gained in battle from all opponent Weapons and gain 1 damage. If your opponent has at least 20 buffs, remove 2 of the type they have the most of.',
         cost: 14,
-        recipe: 'Ripsaw Blade + Whetstone'
+        recipe: 'Ripsaw Blade + Whetstone',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Just Stats',
         description: 'Start of battle: Gain 10% maximum health and 10% base stamina regeneration. Always offered in round 4.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Uniquely Unique',
         description: 'The Star item triggers 20% faster + 10% for each Diamond Unique item, Customer Card or Platinum Customer Card. Chance to find Unique-items +50%. You can obtain +2 Unique-items.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Heavy Drinking',
         description: 'Every 10s: Trigger the effect of a random Potion. Triggers 50% faster for each distinct Star Potion.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Girl Power',
         description: 'Every 6.7: Gain 2 Regeneration or 2 Empower, depending on which you have less of. Triggers 20% faster for each distinct Star Class item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Blood Manipulation',
         description: 'Deal 15% of your healing as Effect-damage. Every 4s: Gain 1 Vampirism. Triggers 15% faster for each Star Vampiric-item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Thornburst',
         description: 'Every 6.5s: tun for 0.3s and gain 2 Spikes (up to 5 times). Triggers 5% faster fo reach Spikes.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Heart of the Cards',
         description: 'Requires: Deck of Cards. Card revealed: Gain 3 Regeneration. If the card is at position 3 or highers in the chain, also gain 4 Mana.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Buy the Holy Light',
         description: 'Holy-Items have +20% chance to be on sale. Oil Lamps and Djinn Lamps gain Holy. Star Holy-Items trigger 40% faster.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Bagtacular',
         description: 'Fanny Packs give +5% trigger speed. Stamina Sacks give 5% base stamina regeneration. Potion Belts give 2 buffs when a Potion inside is consumed. Protective Purses give +15 Block.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'More Stats',
         description: 'Start of battle: Gain 10% maximum health. Your Weapons deal +5% damage. Always offered in round 10.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Snowcake',
         description: 'Every 2.3s: Inflict 1 Cold. If your opponent has at least 10 Cold, increase Effect-damage by 10% and deal 10 Effect-damage.',
-        cost: 6
+        cost: 6,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Pop',
         min_damage: 2,
@@ -2540,73 +3178,153 @@ export const items = [
         accuracy: 90,
         cooldown: 1.5,
         description: 'Attacks 4% faster for each Mana (up to 60%).',
-        cost: 3
+        cost: 3,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Cthulhu',
         description: 'Every 3.5s: Deal 10 Effect-damage with 100% lifesteal and trigger a random Star Food. Star Food gains Dark. Triggers 15% faster for each Star Dark-item.',
-        cost: 8
+        cost: 8,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Sir Sand',
         description: 'Start of battle: Both players take -25% damage for 7s (unstackable). Inflict 2 Blind to both players.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Paradise Birb',
         description: 'Every 2.7s: Star items gain 7% chance to duplicate buffs they gain, heal 7% more and trigger 7% faster (up to 10 times).',
         cost: 22,
-        recipe: 'Jynx Torquilla + Prismatic Orb'
+        recipe: 'Jynx Torquilla + Prismatic Orb',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Double Rainbow',
         description: 'Star items have 20% chance to duplicate buffs they gain. Every 6s: Gain a random buff. Triggers 15% faster for each Diamond Holy-item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'False Life',
         description: 'Items give +30% maximum health. Overhealed: Gain the overheal as maximum health. Every 6s: Heal for 10 + 4 for each Star Dark-item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Full Body Protection',
         description: 'Star items give +30% Block. If you have exactly 1 Armor, Helmet and Shoes: Reduce Melee/Ranged/Effect-damage taken by 8. Every 5s: Gain 10 Block.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Repeater',
         description: 'After 12s: Repeat the Start of battle effects of the Star items.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Winged Boots',
         description: 'Health drops below 70%: Gain 1 Empower, cleanse 20 debuffs and dodge the next 3 Melee/Ranged-attacks (once).',
         cost: 13,
-        recipe: 'Leather Boots + Divine Potion'
+        recipe: 'Leather Boots + Divine Potion',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Echoing Battlecry',
         description: 'Every 15s: Repeat a random Star Start of battle effect (once per item). Triggers 50% faster for each Star Start of battle item.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Enchanted Weapons',
         description: 'Attack effects of the Star Weapons have a 20% chance to repeat. Every 5.2s: Gain 1 of the buff you have least of.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'No Rush Please',
         description: 'Start of battle: Both players take -35% damage for 10s. Inflict 4 Cold.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Time Melting',
         description: 'Start of battle: Gain 5 Heat. Effect durations of Star items are increased by 60%.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Happy Bomb',
         description: 'After 12s: Use all your buffs, your opponent takes +4% damage for each buff used. Deal 30 Effect-damage.',
-        cost: 7
+        cost: 7,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Shelly',
         description: 'Cleanse effects have 25% chance to cleanse an additional debuff. Every 12s: Cleanse 6 debuffs and heal for 40. Triggers 15% faster for each Star Potion.',
         cost: 6,
-        recipe: 'Shiny Shell + Health Potion'
+        recipe: 'Shiny Shell + Health Potion',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Holdall',
         description: 'Add 6 backpack slots. Start of battle: Gain 8 Block for each Neutral item inside.',
         cost: 7,
-        recipe: 'Leather Armor + Goobert'
+        recipe: 'Leather Armor + Goobert',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
-        display_name: 'Posion Spear',
+        display_name: 'Poison Spear',
         min_damage: 9,
         max_damage: 14,
         stamina: 1,
@@ -2614,18 +3332,39 @@ export const items = [
         cooldown: 1.5,
         description: 'On hit: Inflict 3 Poison and 2 Posion to yourself. Destroy 6 Block for each Star free slot or Nature-item.',
         cost: 13,
-        recipe: 'Spear + Pestilence Flask'
+        recipe: 'Spear + Pestilence Flask',
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     },{
         display_name: 'Dig Deeper',
         description: 'Requires: Shovel. Shovels dig up more valuable items. Start of battle: Inflict 2 Blind.',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: [3],
     }, {
-        display_name: 'Knife to Meet Your',
+        display_name: 'Knife to Meet You',
         description: 'Daggers attack 40% faster. After 12s: Your Weapons deal +50% damage. Triggers 30% faster for each Star Dagger',
-        cost: 5
+        cost: 5,
+        rarity: 6,
+        type: 1,
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
     }, {
         display_name: 'Lil Chestnut',
         description: 'Shop refreshed: 30% chance for a Trade offer. Every 6s: Gain 3 buffs of the type you have most of. Triggers 1% faster for each Gold the Star items are worth.',
-        cost: 5
+        cost: 6,
+        rarity: 6,
+        type: [15],
+        subtype: null,
+        class: [1, 2, 3, 4],
+        misc_type: null,
+        keywords: []
     }, 
 ]
